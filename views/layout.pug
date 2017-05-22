@@ -1,0 +1,16 @@
+extends ../node_modules/pug-bootstrap/_bootstrap.pug
+
+append styles
+  // Custom styles for this template
+  link(href='../css/bridgesymphony.css', rel='stylesheet')
+
+
+block body
+  include header.pug
+  include footer.pug
+
+  +header
+
+  block content
+
+  +footer

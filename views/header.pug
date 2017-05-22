@@ -1,0 +1,27 @@
+mixin header
+  +navbar-fixed-mod("Bridge Symphony","images/logo.png","navbar")
+
+    if active=='home'
+      +nav_item("/","active") Home
+      +nav_item("About") About
+      +nav_item("Contact") Contact
+      +nav_item("Order") Order
+
+    else if active  =='about'
+      +nav_item("/") Home
+      +nav_item("About","active") About
+      +nav_item("Contact") Contact
+      +nav_item("Order") Order
+
+
+    if active=='contact'
+      +nav_item("/") Home
+      +nav_item("About") About
+      +nav_item("Contact","active") Contact
+      +nav_item("Order") Order
+
+    else if active  =='order'
+      +nav_item("/") Home
+      +nav_item("About") About
+      +nav_item("Contact") Contact
+      +nav_item("Order","active") Order
