@@ -4,12 +4,12 @@ mixin navbar-fixed-mod(name,image,id,style,href)
     .container
       .navbar-header
         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#' + id, aria-expanded='false', aria-controls='navbar')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
         a.navbar-brand(href=href)
-          <a class="navbar-brand" href="http://bridgesymphony.com"><img src="images/logo.png" alt="Bridge Symphony">
+          <a class="navbar-brand" href="http://www.bridgesymphony.com"><img src="images/logo.png" alt="Bridge Symphony">
       .collapse.navbar-collapse( id=id )
         ul.nav.navbar-nav
           block
