@@ -2,14 +2,33 @@ mixin navbar-fixed-mod(name,image,id,style,href)
   - var style = (typeof style === 'undefined') ? "default" : style
   nav( role="navigation", class=["navbar","navbar-fixed-top","navbar-" + style] )
     .container
+      if lang=='1'
+        .navbar-header.pull-right
+          <form class="langform " method="get">
+            <select name="lang" class="selectpicker" data-width="fit" onchange="this.form.submit()">
+              <option selected value="1" data-content='<span class="flag-icon flag-icon-fr"></span>'></option>
+              <option value="2" data-content='<span class="flag-icon flag-icon-us"></span>'></option>
+            </select>
+          </form>
+
+      if lang=='2'
+        .navbar-header.pull-right
+          <form class="langform " method="get">
+            <select name="lang" class="selectpicker" data-width="fit" onchange="this.form.submit()">
+              <option value="1" data-content='<span class="flag-icon flag-icon-fr"></span>'></option>
+              <option selected value="2" data-content='<span class="flag-icon flag-icon-us"></span>'></option>
+            </select>
+          </form>
+          
       .navbar-header
         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#' + id, aria-expanded='false', aria-controls='navbar')
           span.sr-only Toggle navigation
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        a.navbar-brand(href=href)
-          <a class="navbar-brand" href="http://www.bridgesymphony.com"><img src="images/logo.png" alt="Bridge Symphony">
+        <a class="navbar-brand" href="http://www.bridgesymphony.com"><img src="images/logo.png" alt="Bridge Symphony">
+
+
       .collapse.navbar-collapse( id=id )
         ul.nav.navbar-nav
           block
@@ -20,27 +39,55 @@ mixin navbar-fixed-mod(name,image,id,style,href)
 mixin header
   +navbar-fixed-mod("Bridge Symphony","images/logo.png","navbar")
 
-    if active=='home'
-      +nav_item("/","active") Home
-      +nav_item("About") About
-      +nav_item("Contact") Contact
-      +nav_item("Order") Order
+    if lang=='1'
+      if active=='home'
+        +nav_item("/","active") Accueil
+        +nav_item("About") A Propos
+        +nav_item("Contact") Contact
+        +nav_item("Order") Commander
 
-    else if active  =='about'
-      +nav_item("/") Home
-      +nav_item("About","active") About
-      +nav_item("Contact") Contact
-      +nav_item("Order") Order
+      else if active  =='about'
+        +nav_item("/") Accueil
+        +nav_item("About","active") A Propos
+        +nav_item("Contact") Contact
+        +nav_item("Order") Commander
 
 
-    if active=='contact'
-      +nav_item("/") Home
-      +nav_item("About") About
-      +nav_item("Contact","active") Contact
-      +nav_item("Order") Order
+      else if active=='contact'
+        +nav_item("/") Accueil
+        +nav_item("About") A Propos
+        +nav_item("Contact","active") Contact
+        +nav_item("Order") Commander
 
-    else if active  =='order'
-      +nav_item("/") Home
-      +nav_item("About") About
-      +nav_item("Contact") Contact
-      +nav_item("Order","active") Order
+      else if active  =='order'
+        +nav_item("/") Accueil
+        +nav_item("About") A Propos
+        +nav_item("Contact") Contact
+        +nav_item("Order","active") Commander
+
+
+    else if lang=='2'
+      if active=='home'
+        +nav_item("/","active") Home
+        +nav_item("About") About
+        +nav_item("Contact") Contact
+        +nav_item("Order") Order
+
+      else if active  =='about'
+        +nav_item("/") Home
+        +nav_item("About","active") About
+        +nav_item("Contact") Contact
+        +nav_item("Order") Order
+
+
+      else if active=='contact'
+        +nav_item("/") Home
+        +nav_item("About") About
+        +nav_item("Contact","active") Contact
+        +nav_item("Order") Order
+
+      else if active  =='order'
+        +nav_item("/") Home
+        +nav_item("About") About
+        +nav_item("Contact") Contact
+        +nav_item("Order","active") Order

@@ -3,6 +3,9 @@ extends ../node_modules/pug-bootstrap/_bootstrap.pug
 append styles
   // Custom styles for this template
   link(href='../css/bridgesymphony.css', rel='stylesheet')
+  link(href='../flag-icon-css/css/flag-icon.css', rel='stylesheet')
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
 
 
 block body
@@ -14,3 +17,7 @@ block body
   block content
 
   +footer
+
+block append scripts
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  script(src='/js/selectpicker.js')
