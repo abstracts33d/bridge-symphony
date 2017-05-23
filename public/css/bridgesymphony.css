@@ -71,9 +71,15 @@ form{
 }
 
 .langform{
+  margin:0px;
   display: inline;
 }
 
 .bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*=col-]{
   margin-top: 9px;
+}
+
+
+h1{
+  color: black;
 }
