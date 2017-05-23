@@ -6,17 +6,17 @@ var datafr={
   active:'home',
   lang:'1',
 
-  carousel_h1_1:'Un support didactique pour l\'enseignement du bridge.',
+  carousel_h1_1:'Bridge Symphony le meilleur atout des bridgeurs',
   carousel_p_1:'',
-  carousel_caption_1:'',
+  carousel_caption_1:'En Savoir Plus',
 
-  carousel_h1_2:'Un outil de travail pour bridgeur de tout niveau.',
+  carousel_h1_2:'Un support didactique pour l\'enseignement du bridge.',
   carousel_p_2:'',
-  carousel_caption_2:'',
+  carousel_caption_2:'En Savoir Plus',
 
-  carousel_h1_3:'',
+  carousel_h1_3:'Un outil de travail pour bridgeur de tout niveau.',
   carousel_p_3:'',
-  carousel_caption_3:'',
+  carousel_caption_3:'En Savoir Plus',
 }
 
 var dataen={
@@ -24,17 +24,18 @@ var dataen={
   active:'home',
   lang:'2',
 
-  carousel_h1_1:'blablabla',
+  carousel_h1_1:'Bridge Symphony the best trump for bridgers ',
   carousel_p_1:'',
-  carousel_caption_1:'',
+  carousel_caption_1:'Learn More',
 
-  carousel_h1_2:'blablabablalb',
+  carousel_h1_2:'A didactic support for teaching bridge',
   carousel_p_2:'',
-  carousel_caption_2:'',
+  carousel_caption_2:'Learn More',
 
-  carousel_h1_3:'',
+  carousel_h1_3:'A pedagogic tool for all level bridge player',
   carousel_p_3:'',
-  carousel_caption_3:'',
+  carousel_caption_3:'Learn More',
+
 }
 
 /* GET home page. */
