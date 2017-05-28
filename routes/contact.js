@@ -35,7 +35,6 @@ router.get('/', function(req, res, next) {
         text: req.query.message
       }
     );
-    res.redirect('/');
   }
 
 });
