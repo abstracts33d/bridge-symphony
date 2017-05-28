@@ -24,11 +24,9 @@ Mailer.prototype = {
     // send mail with defined transport object
     this.transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.log(error);
-            return 0;
+            return console.log(error);
         }
         console.log('Message %s sent: %s', info.messageId, info.response);
-        return 1;
     });
   }
 };
