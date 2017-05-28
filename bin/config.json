@@ -1,0 +1,12 @@
+{
+  "mail":{
+    "host": "SSL0.OVH.NET",
+    "port": "587",
+    "secureConnection": false,
+    "auth": {
+      "user": "contact@bridgesymphony.com",
+        "pwd" : "password;)"
+    },
+    "email": "contact@bridgesymphony.com"
+  }
+}
