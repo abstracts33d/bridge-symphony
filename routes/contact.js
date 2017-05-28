@@ -33,15 +33,16 @@ router.get('/', function(req, res, next) {
         text: req.query.message
       }
     );
+
     if(mail_sent==1) {
       if (req.session.lang==1) {res.send('Votre message a bien été envoyé');}
-      if (req.session.lang==2) {res.send('Your mail has been sent', dataen);}
+      if (req.session.lang==2) {res.send('Your mail has been sent');}
     };
-    if(mail_sent==0) {
-      if (req.session.lang==1) {res.send('Oups une erreur est survenue Veuillez svp recommencer', datafr);}
-      if (req.session.lang==2) {res.send('Oops an error occured please try again', dataen);}
-    }
 
+    if(mail_sent==0) {
+      if (req.session.lang==1) {res.send('Oups une erreur est survenue Veuillez svp recommencer');}
+      if (req.session.lang==2) {res.send('Oops an error occured please try again');}
+    };
   }
 
   else if (req.session.lang==1) {res.render('contact', datafr);}
