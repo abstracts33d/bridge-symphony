@@ -8,12 +8,24 @@ var datafr={
   title: 'Bridge Symphony',
   active:'contact',
   lang:'1',
+  title:"Contactez Nous",
+  contact_text: "Contactez nous en remplissant le formulaire de contact ou en visitant nos reseaux sociaux comme Facebook ou Twitter",
+  name_field:"Nom",
+  msg_field:"Votre Message",
+  snd_msg_field:"Envoyer",
+  social_sites:"Nos Reseaux Sociaux"
 }
 
 var dataen={
   title: 'Bridge Symphony',
   active:'contact',
   lang:'2',
+  title:"Contact Us",
+  contact_text:"Feel free to shout us by filing the contact form or visiting our social network sites like Fackebook or Twitter.",
+  name_field:"Name",
+  msg_field:"Your Message",
+  snd_msg_field:"Send Message",
+  social_sites:"Our Social Sites"
 }
 
 /* GET home page. */
