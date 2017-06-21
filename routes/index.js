@@ -10,7 +10,7 @@ var datafr={
   carousel_caption_1:'',
   feature1_h2:'Le bridge à portée de main ',
   feature1_h2_sub: 'Pour Enseignants et Joueurs, pratique ludique et d\'une parfaite visibilité',
-  feature1_p:'Bridge Symphony vous propose des milliers de possibilités d\'enchères à partir de 104 cartes declinant 26 donnes simulées respectant les probabilités distributionelles (cf. typologie) que vous pouvez développer à loisir selon vos objectifs pédagogiques ou votre niveau personel. Cet ensemble de cartes pelliculées au format poche constitue une source abondante d\'exemple et d\'exercices vous permetant de construire vos strategie de jeu. ',
+  feature1_p:'Bridge Symphony vous propose des milliers de possibilités d\'enchères à partir de 104 cartes declinant 26 donnes simulées respectant les probabilités distributionelles (cf. typologie) que vous pouvez développer à loisir selon vos objectifs pédagogiques ou votre niveau personel. Cet ensemble de cartes pelliculées au format poche constitue une source abondante d\'exemple et d\'exercices vous permetant de construire vos strategie de jeu.',
 
   carousel_h1_2:'Un support didactique pour l\'enseignement du bridge ',
   carousel_caption_2:'En Savoir Plus',
