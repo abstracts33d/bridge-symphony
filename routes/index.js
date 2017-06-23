@@ -7,7 +7,7 @@ var datafr={
   lang:'1',
 
   carousel_h1_1:'Bridge Symphony le meilleur atout des bridgeurs',
-  carousel_caption_1:'',
+  carousel_caption_1:'En Savoir Plus',
   feature1_h2:'Le bridge à portée de main ',
   feature1_h2_sub: 'Pour Enseignants et Joueurs, pratique ludique et d\'une parfaite visibilité',
   feature1_p:'Bridge Symphony vous propose des milliers de possibilités d\'enchères à partir de 104 cartes déclinant 26 donnes simulées respectant les probabilités distributionelles (cf. typologie) que vous pouvez développer à loisir selon vos objectifs pédagogiques ou votre niveau personel. Cet ensemble de cartes pelliculées au format poche constitue une source abondante d\'exemples et d\'exercices vous permettant d\'optimiser vos constructions de jeu. Le bridge certes peut sembler compliqué ce qui fais néanmois son interet. Bridge Symphony est une tetative de rendre cet apprentisage plus accesible.',
@@ -29,7 +29,7 @@ var datafr={
   carousel_caption_4:'En Savoir Plus',
   feature4_h2:'Contenu et Fonctionalité',
   feature4_h2_sub: '',
-  feature4_p:'108 cartes (350g) couleur recto-verso au format 11,6cmx18,4cm. D\'une grande lisibilité, facile à mettre en œuvre, cet ensemble vous procure une mine quasi inépuisable de configurations, d\' exemples ou d\'exercices. 104 mains composant 26 donnes  (A,B,C, ... ,Z) dont l\'élaboration a été menée dans le respect des probabilités distributionnelles. Leur typologie (composition et force) est précisée dans une carte particulière (voir carte typologie). Pour chaque donne, 6 couples possibles  (A1,A2), (A1,A3), … , (A3,A4) en situation de jeu (table), 12 positionnements envisageables. Un éventail d\'arrangements qui s\'élargit si l\'on précise qui est l\'ouvreur. Déjà des milliers de scénari, et encore bien davantage avec la compatibilité établie entre mains issues de donnes différentes. Nous pouvons appeler « duo » chacune de ces autres configurations  A1/B2, C3/M1 répertoriées sur les 2 cartes « compatibilité ». De plus, la distribution aléatoire ou imaginée des 26 cartes à jouer restantes, vous permettra d\'obtenir ou de créer autant de nouvelles donnes complètes... Faites vos jeux !',
+  feature4_p:'108 cartes (350g) couleur recto-verso au format 11,6cmx18,4cm. D\'une grande lisibilité, facile à mettre en œuvre, cet ensemble vous procure une mine quasi inépuisable de configurations, d\' exemples ou d\'exercices. 104 mains composant 26 donnes  (A,B,C, ... ,Z) dont l\'élaboration a été menée dans le respect des probabilités distributionnelles. Leur typologie (composition et force) est précisée dans une carte particulière (voir carte typologie). Pour chaque donne, 6 couples possibles  (A1,A2), (A1,A3), … , (A3,A4) en situation de jeu (table), 12 positionnements envisageables. Un éventail d\'arrangements qui s\'élargit si l\'on précise qui est l\'ouvreur. Déjà des milliers de scénari, et encore bien davantage avec la compatibilité établie entre mains issues de donnes différentes. Nous pouvons appeler « duo » chacune de ces autres configurations  B1/V1, E3/S1, U2/Q3... répertoriées sur les 2 cartes « compatibilité ». De plus, la distribution aléatoire ou imaginée des 26 cartes à jouer restantes, vous permettra d\'obtenir ou de créer autant de nouvelles donnes complètes... Faites vos jeux !',
 
 }
 
