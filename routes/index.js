@@ -6,7 +6,7 @@ var datafr={
   active:'home',
   lang:'1',
 
-  carousel_h1_1:'Bridge Symphony le meilleur atout des bridgeurs',
+  carousel_h1_1:'Bridge Symphony, le meilleur atout des bridgeurs',
   carousel_caption_1:'En Savoir Plus',
   feature1_h2:'Le bridge à portée de mains ',
   feature1_h2_sub: 'Pour Enseignants et Joueurs, pratique ludique et d\'une parfaite visibilité',
@@ -25,7 +25,7 @@ var datafr={
   feature3_p:'Joueur débutant ou confirmé, toutes vos questions trouveront ici de multiples illustrations pouvant guider votre réflexion et doper votre mémoire. Quelques exemples concrets: 9 mains ne totalisent qu\'au plus 4 points honneurs (voir carte typologie). A vous d\'imaginer vos séquences d\'enchères où elle doivent - impérativement ou optionellement - s\'exprimer (problème du surcontre, défense agressive ...). Gérer les mains de 11H,12H "plates" à l\'ouverture, votre partenaire partage-t-il votre vision (3eme,4eme,réveil ...)? Réviser les mains bicolores. H4 : ouvrez vous de 2 coeurs?  Et en intervention ? R1 : ouvrir? intervenir? Répondre sur ouverture ou après telle séquence ? Mon partenaire me demande de sélectionner G4,J3 K3,M1... sur son ouverture d\'un trèfle, que répondre et que dire en cas  d\'intervention adverse plausible ? ... Insomniaque ? Pensez vos mains au lieu de compter les moutons... ',
 
 
-  carousel_h1_4:'Mais c\' est quoi?',
+  carousel_h1_4:'Mais c\'est quoi ?',
   carousel_caption_4:'En Savoir Plus',
   feature4_h2:'Contenu et Fonctionalité',
   feature4_h2_sub: '',
