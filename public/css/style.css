@@ -6,3 +6,24 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.backgroundcontainer{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top:0px;
+  left:0px;
+  z-index: 0;
+}
+
+.main{
+  z-index: 1;
+}
+
+.controls {
+  font-smoothing: subpixel-antialiased;
+  position: absolute;
+  left: 0px;
+  bottom: 40px;
+}

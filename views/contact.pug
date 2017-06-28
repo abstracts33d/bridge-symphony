@@ -1,6 +1,10 @@
 extends layout.pug
 
 block content
+	div(id="container" class="backgroundcontainer")
+		div(id="output" class="backgroundcontainer")
+	div(id="controls" style="display: none;" class="controls")
+
 	.container
 		.row
 			.col-md-8.col-md-offset-2
@@ -29,3 +33,5 @@ block content
 					<li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
 					<li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
 				</ul>
+block append scripts
+	script(src='js/triangles-contact.js')

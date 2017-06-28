@@ -1,6 +1,9 @@
 extends layout.pug
 
 block content
+	div(id="container" class="backgroundcontainer")
+		div(id="output" class="backgroundcontainer")
+	div(id="controls" style="display: none;" class="controls")
 	.container
 		.row
 			.col-md-8.col-md-offset-2
@@ -9,3 +12,6 @@ block content
 				h4 LA CAVE DU TRIANGLE : rue Huguerie Tél 0661093152
 
 				h3 Ou nous joindre directement via notre page contact ou joindre Herve Zimmermann au 0642989578
+
+block append scripts
+	script(src='js/triangles-order.js')

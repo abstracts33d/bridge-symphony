@@ -1,6 +1,9 @@
 extends layout.pug
 
 block content
+	div(id="container" class="backgroundcontainer")
+		div(id="output" class="backgroundcontainer")
+	div(id="controls" style="display: none;" class="controls")
 	.container
 		.row
 			.col-md-8.col-md-offset-2
@@ -10,3 +13,6 @@ block content
 				p.lead Ces deux points sont justement d'une grande importance dans l'apprentissage du bridge. J'ai pu découvrir ce jeu, cette discipline, ce sport, à l'adolescence et ne l'ai pratiqué assidûment que bien plus tard (compétitions et autres tournois). Ma passion pour le bridge m'a incité à réfléchir sur la création d'un support visuel d'un usage pratique et instantané qui permet de choisir et d'exposer facilement des situations de jeu.
 
 				p.lead Bridge Symphony vous plonge de suite dans le vif du sujet pour: Faire découvrir ce nouveau monde à un interlocuteur curieux: montrons une main grâce à une carte, une donne avec les quatre, simulons une table... Pouvoir accompagner l'apprentissage en présentant ou en comparant telle et telle main. Illustrer les avantages du choix d'une option ou d'un sous-système. Visualiser d'un coup votre jeu complet sans avoir à le dicter (également facile par télephone).
+
+block append scripts
+	script(src='js/triangles-about.js')

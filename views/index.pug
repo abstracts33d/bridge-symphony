@@ -1,6 +1,10 @@
 extends layout.pug
 
 block content
+	div(id="container" class="backgroundcontainer")
+		div(id="output" class="backgroundcontainer")
+	div(id="controls" style="display: none;" class="controls")
+
 	+carousel("presentation",[{image:"../images/1.png",h1:carousel_h1_1,button:{caption:carousel_caption_1,url:"#F1"}},{image:"../images/2.png",h1:carousel_h1_2,button:{caption:carousel_caption_2,url:"#F2"}},	{image:"../images/3.png",h1:carousel_h1_3,button:{caption:carousel_caption_3,url:"#F3"}},{image:"../images/4.png",h1:carousel_h1_4,button:{caption:carousel_caption_4,url:"#F4"}}])
 
 	.container.marketing
@@ -50,9 +54,6 @@ block content
 
 		hr.featurette-divider
 
-		br
-		br
-		br
-		br
-		br
-		p
+
+block append scripts
+	script(src='js/triangles-home.js')
