@@ -1,14 +1,21 @@
 extends ../node_modules/pug-bootstrap/_bootstrap.pug
 
-append styles
-  // Custom styles for this template
-  link(href='../css/bridgesymphony.css', rel='stylesheet')
-  link(href='../flag-icon-css/css/flag-icon.css', rel='stylesheet')
 
-  <link rel="stylesheet" href="css/style.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+block head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport",content="width=device-width, initial-scale=1")
+  meta(name="description",content="Bridge Symphony est un outil d'apprentisage et de progression innovant pour bridgeursde tous niveaux")
+  meta(name="author",content="Wegria Manuel")
+  link(rel="icon",href="../../favicon.ico")
+  title= "Bridge Symphony"
+  block styles
+    link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+    link(href='../css/bridgesymphony.css', rel='stylesheet')
+    link(href='../flag-icon-css/css/flag-icon.css', rel='stylesheet')
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 
 
 
