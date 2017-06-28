@@ -55,6 +55,12 @@ var dataen={
   feature3_h2:'',
   feature3_h2_sub: '',
   feature3_p:'',
+
+  carousel_h1_4:'But What is it exactly? ',
+  carousel_caption_4:'Learn More',
+  feature4_h2:'',
+  feature4_h2_sub: '',
+  feature4_p:'',
 }
 
 /* GET home page. */
