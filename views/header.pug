@@ -3,23 +3,41 @@ mixin navbar-fixed-mod(name,image,id,style,href)
   nav( role="navigation", class=["navbar","navbar-fixed-top","navbar-" + style] )
     .container
       if lang=='1'
-        .navbar-header.pull-right
-          <form class="langform " method="get">
-            <select name="lang" class="selectpicker" data-width="fit" onchange="this.form.submit()">
-              <option selected value="1" data-content='<span class="flag-icon flag-icon-fr"></span>'></option>
-              <option value="2" data-content='<span class="flag-icon flag-icon-us"></span>'></option>
-            </select>
+        //-
+          .navbar-header.pull-right
+            <form class="langform " method="get">
+              <select name="lang" class="selectpicker" data-width="fit" onchange="this.form.submit()">
+                <option selected value="1" data-content='<span class="flag-icon flag-icon-fr"></span>'></option>
+                <option value="2" data-content='<span class="flag-icon flag-icon-us"></span>'></option>
+              </select>
+            </form>
+
+        .navbar-header.pull-right.buy
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="8A98CBMDKBPCU">
+            <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+            <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
           </form>
 
       if lang=='2'
-        .navbar-header.pull-right
-          <form class="langform " method="get">
-            <select name="lang" class="selectpicker" data-width="fit" onchange="this.form.submit()">
-              <option value="1" data-content='<span class="flag-icon flag-icon-fr"></span>'></option>
-              <option selected value="2" data-content='<span class="flag-icon flag-icon-us"></span>'></option>
-            </select>
+        //-
+          .navbar-header.pull-right
+            <form class="langform " method="get">
+              <select name="lang" class="selectpicker" data-width="fit" onchange="this.form.submit()">
+                <option value="1" data-content='<span class="flag-icon flag-icon-fr"></span>'></option>
+                <option selected value="2" data-content='<span class="flag-icon flag-icon-us"></span>'></option>
+              </select>
+            </form>
+        .navbar-header.pull-right.buy
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="MP2P2NQZMGPRN">
+            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
           </form>
-          
+
+
       .navbar-header
         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#' + id, aria-expanded='false', aria-controls='navbar')
           span.sr-only Toggle navigation
@@ -44,26 +62,26 @@ mixin header
         +nav_item("/","active") Accueil
         +nav_item("About") A Propos
         +nav_item("Contact") Contact
-        +nav_item("Order") Commander
+        +nav_item("Infos") Informations
 
       else if active  =='about'
         +nav_item("/") Accueil
         +nav_item("About","active") A Propos
         +nav_item("Contact") Contact
-        +nav_item("Order") Commander
+        +nav_item("Infos") Informations
 
 
       else if active=='contact'
         +nav_item("/") Accueil
         +nav_item("About") A Propos
         +nav_item("Contact","active") Contact
-        +nav_item("Order") Commander
+        +nav_item("Infos") Informations
 
-      else if active  =='order'
+      else if active  =='infos'
         +nav_item("/") Accueil
         +nav_item("About") A Propos
         +nav_item("Contact") Contact
-        +nav_item("Order","active") Commander
+        +nav_item("Infos","active") Informations
 
 
     else if lang=='2'
@@ -71,23 +89,23 @@ mixin header
         +nav_item("/","active") Home
         +nav_item("About") About
         +nav_item("Contact") Contact
-        +nav_item("Order") Order
+        +nav_item("Infos") Informations
 
       else if active  =='about'
         +nav_item("/") Home
         +nav_item("About","active") About
         +nav_item("Contact") Contact
-        +nav_item("Order") Order
+        +nav_item("Infos") Informations
 
 
       else if active=='contact'
         +nav_item("/") Home
         +nav_item("About") About
         +nav_item("Contact","active") Contact
-        +nav_item("Order") Order
+        +nav_item("Infos") Informations
 
-      else if active  =='order'
+      else if active  =='infos'
         +nav_item("/") Home
         +nav_item("About") About
         +nav_item("Contact") Contact
-        +nav_item("Order","active") Order
+        +nav_item("Infos","active") Informations

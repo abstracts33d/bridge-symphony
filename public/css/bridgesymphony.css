@@ -67,9 +67,13 @@ body {
 .centered{
   text-align: center;
 }
-form{
-  margin:20px;
+
+
+.buy{
+  margin-top:12px;
+  margin-right: 3px;
 }
+
 .banner-social-buttons{
   text-align: center;
 }
