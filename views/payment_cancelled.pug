@@ -1,0 +1,16 @@
+extends layout.pug
+
+block body
+	div(id="container" class="backgroundcontainer")
+		div(id="output" class="backgroundcontainer")
+	div(id="controls" style="display: none;" class="controls")
+
+	.container
+		.row
+			.col-md-8.col-md-offset-2
+				h2.centered #{dat}
+				div.centered
+					a(class='btn btn-primary' type='button'  href='/') Retour a l'accueil
+
+block append scripts
+	script(src='js/triangles-contact.js')
