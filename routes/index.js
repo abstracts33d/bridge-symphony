@@ -10,7 +10,7 @@ var datafr={
   carousel_caption_1:'En Savoir Plus',
   feature1_h2:'Le bridge à portée de mains ',
   feature1_h2_sub: 'Pour Enseignants et Joueurs, pratique ludique et d\'une parfaite visibilité',
-  feature1_p:'Bridge Symphony vous propose des milliers de possibilités d\'enchères à partir de 104 cartes déclinant 26 donnes simulées respectant les probabilités distributionelles (cf. Hugh Kesley : Testez votre bridge les probabilités / la lecture des mains - éditions du rocher) que vous pouvez développer à loisir selon vos objectifs pédagogiques ou votre niveau personnel. Cet ensemble de cartes pelliculées au format poche constitue une source abondante d\'exemples et d\'exercices vous permettant d\'optimiser vos constructions de jeu. Le bridge certes peut sembler compliqué ce qui fait néanmois son interèt. Bridge Symphony est un moyen de rendre cet apprentisage plus accessible.',
+  feature1_p:'Bridge Symphony vous propose des milliers de possibilités d\'enchères à partir de 104 cartes déclinant 26 donnes simulées respectant les probabilités distributionelles (cf. Hugh Kesley : Testez votre bridge les probabilités / la lecture des mains - éditions du rocher) que vous pouvez développer à loisir selon vos objectifs pédagogiques ou votre niveau personnel. Cet ensemble de cartes pelliculées au format poche constitue une source abondante d\'exemples et d\'exercices vous permettant d\'optimiser vos constructions de jeu. Le bridge certes peut sembler compliqué ce qui fait néanmois son intérèt. Bridge Symphony est un moyen de rendre cet apprentisage plus accessible.',
 
   carousel_h1_2:'Un support didactique pour l\'enseignement du bridge ',
   carousel_caption_2:'En Savoir Plus',
