@@ -1,2 +1,6 @@
-.noprint { display: none; }
-.noscreen { display: inline; }
+noprint { display: none; }
+noscreen { display: inline; }
+
+header nav, footer {
+display: none;
+}
