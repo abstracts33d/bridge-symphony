@@ -31,11 +31,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
-  secret: 'keyboard cat',
+  secret: 'keyboard dog',
   resave: false,
   saveUninitialized: true,
   cookie: { secure: false }
 }))
+
 app.use('/', routes);
 app.use('/users', users);
 app.use('/About', about);
@@ -44,6 +45,16 @@ app.use('/infos', infos);
 app.use('/payment_succes', payment_succes);
 app.use('/payment_cancelled', payment_cancelled);
 app.use('/tuto', tuto);
+
+app.get('/100-1', function (req, res) {
+  res.render("100-1")
+})
+
+app.get('/100-2', function (req, res) {res.render("100-2")})
+app.get('/200-1', function (req, res) {res.render("200-1")})
+app.get('/200-2', function (req, res) {res.render("200-2")})
+app.get('/300-1', function (req, res) {res.render("300-1")})
+app.get('/400-1', function (req, res) {res.render("400-1")})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

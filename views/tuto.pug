@@ -1,7 +1,7 @@
 extends layout.pug
 
 block append head
-	title= "Bridge Symphony - Contact"
+	title= "Bridge Symphony - Tuto"
 	meta(name="description" content="Contactez Bridge Symphony le support didactique pour l enseignement du bridge et l'outil de progression innovant pour bridgeurs de tous niveaux")
 
 	block append style
@@ -11,7 +11,7 @@ block append head
 
 
 block content
-	mixin title(name,numbr)
+	mixin table-title(name,numbr)
 		div(class="entete")
 			span(class="log") <img src="images/logo.png"/>
 			span(class="ttle")= name
@@ -26,197 +26,83 @@ block content
 	.container
 
 			.col-md-12
-				- var list = ["Main", "Ouv"]
-				table(border="1")
-					thead
-						tr
-							th(colspan=9)
-								+title('Encheres a deux', "100-1")
+				h3 A- Introduction
+					p
+						| Les multiples usages et déclinaisons que propose BS aux enseignants, joueurs de tout niveau ou débutants ne sauraient se décrire dans un « mode d'emploi » précis ou exhaustif.
+					p
+						| Pour le partisan d'une pédagogie active que je suis il s’avère cependant souhaitable de vous proposer ici des pistes d'investigation et des exemples de présentation
+						| d'une grande adaptabilité.
+					i
+						| Les grilles illustrées se basent sur le SEF commenté et argumenté de Messieurs Bessis Quentin Cronoer édition Le Bridgeur 2016/2017 T3 à paraître.
+					i
+						| BS n'est pas une méthode (rappel), mais un moyen de conduire celle qui vous sied.
 
-						tr
-							th(colspan=9) Ouverture
-						tr
-							- for (var i = 0; i < 3; ++i) {
-								each value, index in list
-									th=value
-							- }
+					h3 B- Exploitation
+					h4 a) Présentation
+					p
+						| Je vous présente ici d'une façon plus concrète l'usage pédagogique que je peux faire
+						| de bridge symphony dans les ateliers d'initiation que j'anime ou dans le travail de mise
+						| au point toujours nécessaire entre partenaires (...ou à titre personnel)
+					p
+						| Donner vie à ce support interactif s'est réalisé par la mise en forme de grilles de travail et d'exercices,
+						| imprimables ou téléchargeables
+					p Quelques modèles vous sont présentés ici, et sous différentes versions:
+					p --> Partiellement illustrés (exemple: 100-1b)
+					p --> Juste thématiques (exemple: 100-1a)
+					p --> Ou complètement vierges (exemple: 100)
+					p A vous d'en imaginer d'autres, BS peut se décliner de multiples façons.
+					h4 b) Avant les grilles: "Prise en main" pour débutants
+					p
+						| Une fois la règle du jeu précisée -et ce n'est déjà pas simple -se posent bien des problèmes ;
+					p
+						| --> Estimation des mains : points H, HL;distribution ( régulière, bicolore, unicolore ) sans évoquer
+						| bien sur la position ou la vulnérabilité
+					p  --> Déroulement des enchères : hiérarchie des couleurs, niveau de manche ...
+					p  Nul besoin de nos grilles jusque là.
+					p
+						| Néanmoins le choix judicieux de quelques mains BS se révèle efficace et pratique pour illustrer nos dires .
+					p
+						| Rappel qui vaut aussi pour la suite : la carte "typologie" permet de selectionner selon vos préférences ces "mains - exemples"
+					p
+						| Enfin, la prise en mains des cartes BS à ce stade par ce public néophyte a suscité de façon unanime un attrait ludique et une curiosité
+						| qui se sontaverés très dynamiques ( générateurs de questions )
 
-					tbody
-					- for (var i = 0; i < 10; ++i) {
-						tr(class=(i % 2 == 0) ? 'odd' : 'even')
-							- for (var j = 0; j < 3; ++j) {
-									td
-										include selector_cards.pug
-									td
-										include select_colors.pug
-							- }
-					- }
+					h4 c) Avec les grilles
+					h4  c.1 ENCHERES A DEUX
+					a(href='/100-1') Grille thematique 100-1a : l'ouverture. Un passage obligé ... Initiation ou recapitulatif (SEF augmenté)
+					br
+					br
+					span Grille thematique 100-1b : quelques exemples
+					br
+					br
+					a(href='/200-1') Grille thematique 200-1a : Reponse à l'ouverture
+					br
+					span Grille thematique 200-1b : quelques exemples
+					br
+					br
+					a(href='/200-2') Grille thematique 200-2a : développement après réponse
+					br
+					span Grille thematique 200-2b : quelques exemples
+					br
 
-				- var list = ["Ouv n°1", "Int n°2"]
-				table(border="1")
-					thead
-						tr
-							th(colspan=9)
-								+title('Encheres competitives', "100-2")
-
-						tr
-							th(colspan=9) ...Intervention du numero 2...
-						tr
-							- for (var i = 0; i < 3; ++i) {
-								each value, index in list
-									th=value
-								th(width=100)
-							- }
-						tr
-							- for (var i = 0; i < 3; ++i) {
-								th
-								th
-									include selector_cards.pug
-								th
-							- }
-
-					tbody
-					- for (var i = 0; i < 10; ++i) {
-						tr(class=(i % 2 == 0) ? 'odd' : 'even')
-							- for (var j = 0; j < 3; ++j) {
-									td
-										include select_colors.pug
-									td
-										include select_colors.pug
-									td
-							- }
-					- }
-
-
-
-				- var list = ["Ouverture", "A1", "A2", "A3", "A4"]
-				table(border="1")
-					thead
-						tr
-							th(colspan=6)
-								+title("Encheres a deux", "200-1"	)
-
-						tr
-							th(colspan=6) Reponses aux ouvertures de ...
-						tr
-							each value, index in list
-								th=value
-							th(width=300)
-
-					tbody
-					- for (var i = 0; i < 10; ++i) {
-						tr(class=(i % 2 == 0) ? 'odd' : 'even')
-							each value, index in list
-								td
-									include select_colors.pug
-							td
-					- }
+					h4  c.2 ENCHERES COMPETITIVES
+					a(href='/100-2') Grille thematique 100-2a : Reponse à l'ouverture
+					br
+					span Grille thematique 100-2b : quelques exemples
+					br
+					br
+					a(href='/300-1') Grille thematique 300-1a : Reponse à l'ouverture
+					br
+					span Grille thematique 300-1b : quelques exemples
+					br
+					br
+					a(href='/400-1') Grille thematique 400-1a : Reponse à l'ouverture
+					br
+					span Grille thematique 400-1b : quelques exemples
+					br
+					br
 
 
-
-
-				- var list = ["---", "Rep ", "Red", "Re-Rép", "Re-Red"	]
-				table(border="1")
-					thead
-						tr
-							th(colspan=6)
-								+title('Encheres a deux', "200-2")
-						tr
-							th(colspan=2) Réponse à l ouverture de -->
-							th
-								include select_colors.pug
-							th(colspan=2) et developpements Main:
-							th
-								include selector_cards.pug
-						tr
-								each value, index in list
-									th=value
-								th(width=300)
-
-					tbody
-
-					- for (var i = 0; i < 10; ++i) {
-
-						tr(class=(i % 2 == 0) ? 'odd' : 'even')
-							td
-								include selector_cards.pug
-							- for (var j = 0; j < 4; ++j) {
-								td
-									include select_colors.pug
-							- }
-							td
-					- }
-
-
-				- var list = ["Ouv (n°1)", "Int(n°2)", "n°3", "Rép (n°4)"]
-				table(border="1")
-					thead
-						tr
-							th(colspan=5)
-								+title('Encheres competitives', "300-1")
-
-						tr
-							th(colspan=5) Réponse (n°4) à l intervention du partenaire (n°2)
-						tr
-								each value, index in list
-									th=value
-								th(width=300)
-
-					tbody
-						td(rowspan=11)
-							include select_colors.pug
-						- for (var i = 0; i < 10; ++i) {
-
-							tr(class=(i % 2 == 0) ? 'odd' : 'even')
-								td
-									include select_colors.pug
-								td
-									include select_colors.pug
-								td
-									include select_colors.pug
-								td
-						- }
-						tr
-							td
-							td
-							td
-							td
-								include selector_cards.pug
-							td
-
-
-				- var list = ["Ouv n°1", "Int n°2", "Rép n°3"	]
-				table(border="1")
-					thead
-						tr
-							th(colspan=5)
-								+title('Encheres competitives', "400-1")
-
-						tr
-							th(colspan=5) Réponses à l'ouverture du partenaire (n°1) après interventions du n°2
-						tr
-								each value, index in list
-									th=value
-								th(width=300)
-
-					tbody
-						td(rowspan=11)
-							include select_colors.pug
-						- for (var i = 0; i < 10; ++i) {
-
-							tr(class=(i % 2 == 0) ? 'odd' : 'even')
-								td
-									include select_colors.pug
-								td
-									include select_colors.pug
-								td
-						- }
-						tr
-							td
-							td
-							td
-								include selector_cards.pug
-							td
 
 
 

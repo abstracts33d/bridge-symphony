@@ -1,0 +1,63 @@
+extends layout.pug
+
+block append head
+	title= "Bridge Symphony - 100-1"
+	meta(name="description" content="Contactez Bridge Symphony le support didactique pour l enseignement du bridge et l'outil de progression innovant pour bridgeurs de tous niveaux")
+
+	block append style
+		<link rel="stylesheet" href="css/screen.css">
+		<link rel="stylesheet" href="css/print.css" media="print">
+		<link rel="stylesheet" href="css/table.css">
+
+
+block content
+	mixin table-title(name,numbr)
+		div(class="entete")
+			span(class="log") <img src="images/logo.png"/>
+			span(class="ttle")= name
+			span(class="numb")= numbr
+
+
+
+	div(id="container" class="backgroundcontainer")
+		div(id="output" class="backgroundcontainer")
+	div(id="controls" style="display: none;" class="controls")
+
+	.container
+
+
+		.col-md-12
+			- var list = ["Ouv n°1", "Int n°2"]
+			table(border="1")
+				thead
+					tr
+						th(colspan=9)
+							+table-title('Encheres competitives', "100-2")
+
+					tr
+						th(colspan=9) ...Intervention du numero 2...
+					tr
+						- for (var i = 0; i < 3; ++i) {
+							each value, index in list
+								th=value
+							th(width=100)
+						- }
+					tr
+						- for (var i = 0; i < 3; ++i) {
+							th
+							th
+								include selector_cards.pug
+							th
+						- }
+
+				tbody
+				- for (var i = 0; i < 10; ++i) {
+					tr(class=(i % 2 == 0) ? 'odd' : 'even')
+						- for (var j = 0; j < 3; ++j) {
+								td
+									include select_colors.pug
+								td
+									include select_colors.pug
+								td
+						- }
+				- }
