@@ -11,6 +11,14 @@ block append head
 
 
 block content
+	mixin title(name,numbr)
+		div(class="entete")
+			span(class="log") <img src="images/logo.png"/>
+			span(class="ttle")= name
+			span(class="numb")= numbr
+
+
+
 	div(id="container" class="backgroundcontainer")
 		div(id="output" class="backgroundcontainer")
 	div(id="controls" style="display: none;" class="controls")
@@ -23,11 +31,7 @@ block content
 					thead
 						tr
 							th(colspan=9)
-								div
-									span(style="display:inline") <img src="images/logo.png"	width=50px />
-									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres a Deux
-									span(style="font-size:24px") 100-1
-
+								+title('Encheres a deux', "100-1")
 
 						tr
 							th(colspan=9) Ouverture
@@ -53,10 +57,7 @@ block content
 					thead
 						tr
 							th(colspan=9)
-								div
-									span(style="display:inline") <img src="images/logo.png"	width=50px />
-									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres competitives
-									span(style="font-size:24px") 100-2
+								+title('Encheres competitives', "100-2")
 
 						tr
 							th(colspan=9) ...Intervention du numero 2...
@@ -93,16 +94,14 @@ block content
 					thead
 						tr
 							th(colspan=6)
-								div
-									span(style="display:inline") <img src="images/logo.png"	width=50px />
-									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres a deux
-									span(style="font-size:24px") 200-1
+								+title("Encheres a deux", "200-1"	)
+
 						tr
 							th(colspan=6) Reponses aux ouvertures de ...
 						tr
 							each value, index in list
 								th=value
-							th(width=100)
+							th(width=300)
 
 					tbody
 					- for (var i = 0; i < 10; ++i) {
@@ -121,10 +120,7 @@ block content
 					thead
 						tr
 							th(colspan=6)
-								div
-									span(style="display:inline") <img src="images/logo.png"	width=50px />
-									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres a deux
-									span(style="font-size:24px") 200-2
+								+title('Encheres a deux', "200-2")
 						tr
 							th(colspan=2) Réponse à l ouverture de -->
 							th
@@ -135,7 +131,7 @@ block content
 						tr
 								each value, index in list
 									th=value
-								th(width=100)
+								th(width=300)
 
 					tbody
 
@@ -152,26 +148,19 @@ block content
 					- }
 
 
-
-
-
-
-
 				- var list = ["Ouv (n°1)", "Int(n°2)", "n°3", "Rép (n°4)"]
 				table(border="1")
 					thead
 						tr
 							th(colspan=5)
-								div
-									span(style="display:inline") <img src="images/logo.png"	width=50px />
-									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres competitives
-									span(style="font-size:24px") 300-1
+								+title('Encheres competitives', "300-1")
+
 						tr
 							th(colspan=5) Réponse (n°4) à l intervention du partenaire (n°2)
 						tr
 								each value, index in list
 									th=value
-								th(width=100)
+								th(width=300)
 
 					tbody
 						td(rowspan=11)
@@ -193,6 +182,7 @@ block content
 							td
 							td
 								include selector_cards.pug
+							td
 
 
 				- var list = ["Ouv n°1", "Int n°2", "Rép n°3"	]
@@ -200,16 +190,14 @@ block content
 					thead
 						tr
 							th(colspan=5)
-								div
-									span(style="display:inline") <img src="images/logo.png"	width=50px />
-									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres competitives
-									span(style="font-size:24px") 400-1
+								+title('Encheres competitives', "400-1")
+
 						tr
 							th(colspan=5) Réponses à l'ouverture du partenaire (n°1) après interventions du n°2
 						tr
 								each value, index in list
 									th=value
-								th(width=100)
+								th(width=300)
 
 					tbody
 						td(rowspan=11)
@@ -228,6 +216,7 @@ block content
 							td
 							td
 								include selector_cards.pug
+							td
 
 
 
