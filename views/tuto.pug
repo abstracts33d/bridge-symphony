@@ -4,79 +4,230 @@ block append head
 	title= "Bridge Symphony - Contact"
 	meta(name="description",content="Contactez Bridge Symphony le support didactique pour l enseignement du bridge et l'outil de progression innovant pour bridgeurs de tous niveaux")
 
+	block append style
+		<link rel="stylesheet" href="css/table.css">
+
+
 block content
 	div(id="container" class="backgroundcontainer")
 		div(id="output" class="backgroundcontainer")
 	div(id="controls" style="display: none;" class="controls")
 
 	.container
-		.row
-			.col-md-8.col-md-offset-2
-				<div id="annexes" class="divTable" style="background: white;float:;border:solid 1px;border-bottom:0;margin:30px 30px; padding: /*2px*/;width:98%;min-height:;">
-					<TABLE border="" cellspacing="0" cellpadding="5">
-						<TR border="0" bgcolor="">
-							<TH border="0" colspan="2">Tableau
-							<TH border="0" colspan="2">Type d'Enchères
-							<TH border="0" colspan="3">Liens
-						<TR bgcolor="">
-							<TH>N°
-							<TH>Thématique
-							<TH>Enchères à deux
-							<TH>Enchères Compétitives
-							<TH>Grilles Thématiques(a)
-							<TH>Grilles Exemples(b)
-							<TH>Grilles Vierges
-						<TR>
-							<TD>100-1
-							<TD>L'ouverture
-							<TD><img class="" src="/img/croix.jpg" width="20" height="20" alt="A g instant camera" />
-							<TD>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/centuna">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/centunb">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/centun">Voir</a></button>
-						<TR>
-							<TD>100-2
-							<TD>Reponse à l'ouverture(Intervention du n°2)
-							<TD>
-							<TD><img class="" src="http://bridge-symphony/img/croix.jpg" width="20" height="20" alt="A g instant camera" />
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/centdea">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/centdeb">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/centde">Voir</a></button>
-						<TR>
-							<TD>200-1
-							<TD>Reponse à l'ouverture
-							<TD><img class="" src="http://bridge-symphony/img/croix.jpg" width="20" height="20" alt="A g instant camera" />
-							<TD>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/decentuna">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/decentunb">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/decentun">Voir</a></button>
-						<TR>
-							<TD>200-2
-							<TD>Développement après réponse
-							<TD><img class="" src="http://bridge-symphony/img/croix.jpg" width="20" height="20" alt="A g instant camera" />
-							<TD>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/decentdea">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/decentdeb">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/decentde">Voir</a></button>
-						<TR>
-							<TD>300
-							<TD>Réponse (n°4) à l'intervention du partenaire (n°2)
-							<TD>
-							<TD><img class="" src="http://bridge-symphony/img/croix.jpg" width="20" height="20" alt="A g instant camera" />
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/troiscentuna">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/troiscentunb">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/troiscentun">Voir</a></button>
-						<TR>
-							<TD>400
-							<TD>Réponses à l'ouverture du partenaire (n°1) après interventions du n°2
-							<TD>
-							<TD><img class="" src="http://bridge-symphony/img/croix.jpg" width="20" height="20" alt="A g instant camera" />
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/quatrecentuna">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/quatrecentunb">Voir</a></button>
-							<TD><button type="button" class="btn btn-info"><a class="text-white" target="_blank" href="/bridgesymphony/notice/quatrecentun">Voir</a></button>
-					</TABLE>
-				</div>
-			
+
+			.col-md-12
+				- var list = ["Main", "Ouv"]
+				table(border="1")
+					thead
+						tr
+							th(colspan=9)
+								div
+									span(style="display:inline") <img src="images/logo.png"	width=50px />
+									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres a Deux
+									span(style="float:right; font-size:24px") 100-1
+
+
+						tr
+							th(colspan=9) Ouverture
+						tr
+							- for (var i = 0; i < 3; ++i) {
+								each value, index in list
+									th=value
+							- }
+
+					tbody
+					- for (var i = 0; i < 10; ++i) {
+						tr(class=(i % 2 == 0) ? 'odd' : 'even')
+							- for (var j = 0; j < 3; ++j) {
+									td
+										include selector_cards.pug
+									td
+										include select_colors.pug
+							- }
+					- }
+
+				- var list = ["Ouv n°1", "Int n°2"]
+				table(border="1")
+					thead
+						tr
+							th(colspan=9)
+								div
+									span(style="display:inline") <img src="images/logo.png"	width=50px />
+									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres competitives
+									span(style="float:right; font-size:24px") 100-2
+
+						tr
+							th(colspan=9) ...Intervention du numero 2...
+						tr
+							- for (var i = 0; i < 3; ++i) {
+								each value, index in list
+									th=value
+								th(width=100)
+							- }
+						tr
+							- for (var i = 0; i < 3; ++i) {
+								th
+								th
+									include selector_cards.pug
+								th
+							- }
+
+					tbody
+					- for (var i = 0; i < 10; ++i) {
+						tr(class=(i % 2 == 0) ? 'odd' : 'even')
+							- for (var j = 0; j < 3; ++j) {
+									td
+										include select_colors.pug
+									td
+										include select_colors.pug
+									td
+							- }
+					- }
+
+
+
+				- var list = ["Ouverture", "A1", "A2", "A3", "A4"]
+				table(border="1")
+					thead
+						tr
+							th(colspan=6)
+								div
+									span(style="display:inline") <img src="images/logo.png"	width=50px />
+									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres a deux
+									span(style="float:right; font-size:24px") 200-1
+						tr
+							th(colspan=6) Reponses aux ouvertures de ...
+						tr
+							each value, index in list
+								th=value
+							th(width=100)
+
+					tbody
+					- for (var i = 0; i < 10; ++i) {
+						tr(class=(i % 2 == 0) ? 'odd' : 'even')
+							each value, index in list
+								td
+									include select_colors.pug
+							td
+					- }
+
+
+
+
+				- var list = ["---", "Rep ", "Red", "Re-Rép", "Re-Red"	]
+				table(border="1")
+					thead
+						tr
+							th(colspan=5)
+								div
+									span(style="display:inline") <img src="images/logo.png"	width=50px />
+									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres a deux
+									span(style="float:right; font-size:24px") 200-2
+						tr
+							th(colspan=2) Réponse à l ouverture de -->
+							th
+								include select_colors.pug
+							th(colspan=2) et developpements Main:
+							th
+								include selector_cards.pug
+						tr
+								each value, index in list
+									th=value
+								th(width=100)
+
+					tbody
+
+					- for (var i = 0; i < 10; ++i) {
+
+						tr(class=(i % 2 == 0) ? 'odd' : 'even')
+							td
+								include selector_cards.pug
+							- for (var j = 0; j < 4; ++j) {
+								td
+									include select_colors.pug
+							- }
+							td
+					- }
+
+
+
+
+
+
+
+				- var list = ["Ouv (n°1)", "Int(n°2)", "n°3", "Rép (n°4)"]
+				table(border="1")
+					thead
+						tr
+							th(colspan=5)
+								div
+									span(style="display:inline") <img src="images/logo.png"	width=50px />
+									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres competitives
+									span(style="float:right; font-size:24px") 300-1
+						tr
+							th(colspan=5) Réponse (n°4) à l intervention du partenaire (n°2)
+						tr
+								each value, index in list
+									th=value
+								th(width=100)
+
+					tbody
+						td(rowspan=11)
+							include select_colors.pug
+						- for (var i = 0; i < 10; ++i) {
+
+							tr(class=(i % 2 == 0) ? 'odd' : 'even')
+								td
+									include select_colors.pug
+								td
+									include select_colors.pug
+								td
+									include select_colors.pug
+								td
+						- }
+						tr
+							td
+							td
+							td
+							td
+								include selector_cards.pug
+
+
+				- var list = ["Ouv n°1", "Int n°2", "Rép n°3"	]
+				table(border="1")
+					thead
+						tr
+							th(colspan=5)
+								div
+									span(style="display:inline") <img src="images/logo.png"	width=50px />
+									span(style="display:table;margin:0 auto;text-align:center; font-size:24px") Encheres competitives
+									span(style="float:right; font-size:24px") 400-1
+						tr
+							th(colspan=5) Réponses à l'ouverture du partenaire (n°1) après interventions du n°2
+						tr
+								each value, index in list
+									th=value
+								th(width=100)
+
+					tbody
+						td(rowspan=11)
+							include select_colors.pug
+						- for (var i = 0; i < 10; ++i) {
+
+							tr(class=(i % 2 == 0) ? 'odd' : 'even')
+								td
+									include select_colors.pug
+								td
+									include select_colors.pug
+								td
+						- }
+						tr
+							td
+							td
+							td
+								include selector_cards.pug
+
+
 
 block append scripts
 	script(src='js/triangles-contact-min.js')
