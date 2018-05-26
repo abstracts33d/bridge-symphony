@@ -19,6 +19,10 @@ table{
   width:100%
 }
 
+
+.blackText{ color: black !important; }
+.redText{ color: red !important;}
+
 .entete{}
 .log{display:inline;float:left;width:10%;}
 .log img{width:50px;}

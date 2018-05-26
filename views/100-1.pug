@@ -9,44 +9,55 @@ block append head
 		<link rel="stylesheet" href="css/print.css" media="print">
 		<link rel="stylesheet" href="css/table.css">
 
+mixin table-title(name,numbr)
+	div(class="entete")
+		span(class="log") <img src="images/logo.png"/>
+		span(class="ttle")= name
+		span(class="numb")= numbr
 
 block content
-	mixin table-title(name,numbr)
-		div(class="entete")
-			span(class="log") <img src="images/logo.png"/>
-			span(class="ttle")= name
-			span(class="numb")= numbr
-
-
 
 	div(id="container" class="backgroundcontainer")
-		div(id="output" class="backgroundcontainer")
+	div(id="output" class="backgroundcontainer")
 	div(id="controls" style="display: none;" class="controls")
 
 	.container
-			.col-md-12
-				- var list = ["Main", "Ouv"]
-				table(border="1")
-					thead
-						tr
-							th(colspan=9)
-								+table-title('Encheres a deux', "100-1")
+	.col-md-12
+			- var list = ["Main", "Ouv"]
+			table(border="1")
+				thead
+					tr
+						th(colspan=9)
+							+table-title('Encheres a deux', "100-1")
 
-						tr
-							th(colspan=9) Ouverture
-						tr
-							- for (var i = 0; i < 3; ++i) {
-								each value, index in list
-									th=value
-							- }
+					tr
+						th(colspan=9) Ouverture
+					tr
+						- for (var i = 0; i < 3; ++i) {
+							each value, index in list
+								th=value
+						- }
 
-					tbody
-					- for (var i = 0; i < 10; ++i) {
-						tr(class=(i % 2 == 0) ? 'odd' : 'even')
-							- for (var j = 0; j < 3; ++j) {
-									td
-										include selector_cards.pug
-									td
-										include select_colors.pug
-							- }
-					- }
+				tbody
+				- for (var i = 0; i < 10; ++i) {
+					tr(class=(i % 2 == 0) ? 'odd' : 'even')
+						- for (var j = 0; j < 3; ++j) {
+								td
+									include selector_cards.pug
+								td
+									include select_colors.pug
+						- }
+				- }
+
+			script.
+				$(document).ready(function(){
+					$(window).bind('beforeprint', function(){
+						$('select').each(function(){
+							$(this).parent("span").after($('<span class="select-print noscreen" style="color:'+ $(this).find('option:selected').val()+'!important;font-size:40px">'
+							+ $(this).find('option:selected').text() + '</span>'));
+						});
+					});
+					$(window).bind('afterprint', function(){
+						$('.select-print').remove();
+					});
+				})

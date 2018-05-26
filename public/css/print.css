@@ -1,6 +1,10 @@
-noprint { display: none; }
-noscreen { display: inline; }
+.noscreen { display : none;}
 
-header nav, footer {
-display: none;
+@media print {
+	.noprint { display: none; }
+	.noscreen { display: inline; }
+
+	header, nav, footer {
+		display: none;
+	}
 }

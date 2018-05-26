@@ -2,34 +2,34 @@ extends ../node_modules/pug-bootstrap/_bootstrap.pug
 
 
 block head
-  meta(charset="UTF-8")
-  meta(http-equiv="X-UA-Compatible", content="IE=edge")
-  meta(name="viewport",content="width=device-width, initial-scale=1")
-  meta(name="author",content="Wegria Manuel")
-  link(rel="alternate",href="http://www.bridgesymphony.com",hreflang="fr-fr")
-  link(rel="icon",href="../../favicon.ico")
+	meta(charset="UTF-8")
+	meta(http-equiv="X-UA-Compatible", content="IE=edge")
+	meta(name="viewport",content="width=device-width, initial-scale=1")
+	meta(name="author",content="Wegria Manuel")
+	link(rel="alternate",href="http://www.bridgesymphony.com",hreflang="fr-fr")
+	link(rel="icon",href="../../favicon.ico")
 
-  block styles
-    link(rel="stylesheet",href="../css/bootstrap.min.css")
-    link(href='../css/bridgesymphony.css', rel='stylesheet')
-    link(href='../flag-icon-css/css/flag-icon.css', rel='stylesheet')
-    <link rel="stylesheet" href="css/style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+	block styles
+		link(rel="stylesheet",href="../css/bootstrap.min.css")
+		link(href='../css/bridgesymphony.css', rel='stylesheet')
+		link(href='../flag-icon-css/css/flag-icon.css', rel='stylesheet')
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/print.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 
 
 
 block body
+	include header.pug
+	include footer.pug
 
-  include header.pug
-  include footer.pug
+	+header
 
-  +header
+	block content
 
-  block content
-
-  +footer
+	+footer
 
 block append scripts
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js")
-  script(src='/js/selectpicker.js')
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js")
+	script(src='/js/selectpicker.js')
