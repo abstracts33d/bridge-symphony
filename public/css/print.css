@@ -9,5 +9,5 @@
 		display: none;
 	}
 	table{width:100%}
-	td{font-family: monospace; font: bold}
+	td{width:auto;font-family: monospace; font: bold}
 }

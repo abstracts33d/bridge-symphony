@@ -3,7 +3,7 @@ $(document).ready(function(){
 		$('select').each(function(){
 			if($(this).hasClass("color")){
 				if($(this).prop('selectedIndex')==5){
-					$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:-1px;left:5px;color:'+ $(this).find('option:selected').val()+'!important;font-size:20px">'
+					$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:1px;left:5px;color:'+ $(this).find('option:selected').val()+'!important;font-size:20px">'
 					+ $(this).find('option:selected').text() + '</span>'));
 				}
 				else if ($(this).prop('selectedIndex')<5) {
@@ -11,23 +11,23 @@ $(document).ready(function(){
 					+ $(this).find('option:selected').text() + '</span>'));
 				}
 				else {
-					$(this).parent("span").after($('<span class="select-print noscreen" style="color:'+ $(this).find('option:selected').val()+'!important;font-size:20px">'
+					$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:3	px;left:5px;color:color:'+ $(this).find('option:selected').val()+'!important;font-size:20px">'
 					+ $(this).find('option:selected').text() + '</span>'));
 					$(this).parent("span").parent("td").find(">:nth-child(2)").addClass("noprint");
 				}
 
 			}
 			else if($(this).hasClass("letter")){
-				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:2px;left:22px;color:white!important;font-size:16px">'
+				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:0px;left:22px;color:white!important;font-size:16px">'
 				+ $(this).find('option:selected').text() + '</span> <img class="select-print noscreen" src="../images/hexa.png" style="position: relative;top: 0px;right: 2px;z-index:-1;padding		:3px;width:30px;">'));
 
 			}
 			else if($(this).hasClass("nbr")){
-				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:2px;left:-17px;color:white!important;font-size:16px">'
+				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:0px;left:-17px;color:white!important;font-size:16px">'
 				+ $(this).find('option:selected').text() + '</span>'));
 			}
 			else {
-				$(this).parent("span").after($('<span class="select-print noscreen" style="font-size:24px">'
+				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:0px;left:0px;font-size:24px">'
 				+ $(this).find('option:selected').text() + '</span>'));
 			}
 		});
