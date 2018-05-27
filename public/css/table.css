@@ -48,3 +48,9 @@ table{
 	font-size:24px;
 	vertical-align: middle;
 }
+
+.hexagon{
+	background-image: url(../images/hexa.png);
+	background-color: red;
+	font-size:12px;
+}

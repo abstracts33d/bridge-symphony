@@ -1,0 +1,29 @@
+extends layout.pug
+
+block append head
+	title= "Bridge Symphony - 100-1"
+	meta(name="description" content="Contactez Bridge Symphony le support didactique pour l enseignement du bridge et l'outil de progression innovant pour bridgeurs de tous niveaux")
+
+	block append style
+		<link rel="stylesheet" href="css/screen.css">
+		<link rel="stylesheet" href="css/print.css" media="print">
+		<link rel="stylesheet" href="css/table.css">
+
+mixin table-title(name,number)
+	div(class="entete")
+		span(class="logo") <img src="images/logo.png"/>
+		span(class="title")= name
+		span(class="number")= number
+
+block content
+
+	div(id="container" class="backgroundcontainer")
+	div(id="output" class="backgroundcontainer")
+	div(id="controls" style="display: none;" class="controls")
+
+	.container
+		.col-md-12
+			block table
+				
+
+			script(src='/js/jqueryselect.js')

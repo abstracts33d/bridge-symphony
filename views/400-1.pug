@@ -1,61 +1,34 @@
-extends layout.pug
+extends layout-table.pug
+block table
+	- var list = ["Ouv n°1", "Int n°2", "Rép n°3"	]
+	table(border="1")
+		thead
+			tr
+				th(colspan=5)
+					+table-title('Encheres competitives', "400-1")
 
-block append head
-	title= "Bridge Symphony - 100-1"
-	meta(name="description" content="Contactez Bridge Symphony le support didactique pour l enseignement du bridge et l'outil de progression innovant pour bridgeurs de tous niveaux")
+			tr
+				th(colspan=5) Réponses à l'ouverture du partenaire (n°1) après interventions du n°2
+			tr
+					each value, index in list
+						th=value
+					th(width=300)
 
-	block append style
-		<link rel="stylesheet" href="css/screen.css">
-		<link rel="stylesheet" href="css/print.css" media="print">
-		<link rel="stylesheet" href="css/table.css">
+		tbody
+			td(rowspan=11)
+				include select_colors.pug
+			- for (var i = 0; i < 10; ++i) {
 
-
-block content
-	mixin table-title(name,numbr)
-		div(class="entete")
-			span(class="log") <img src="images/logo.png"/>
-			span(class="ttle")= name
-			span(class="numb")= numbr
-
-
-
-	div(id="container" class="backgroundcontainer")
-		div(id="output" class="backgroundcontainer")
-	div(id="controls" style="display: none;" class="controls")
-
-	.container
-
-
-		.col-md-12
-			- var list = ["Ouv n°1", "Int n°2", "Rép n°3"	]
-			table(border="1")
-				thead
-					tr
-						th(colspan=5)
-							+table-title('Encheres competitives', "400-1")
-
-					tr
-						th(colspan=5) Réponses à l'ouverture du partenaire (n°1) après interventions du n°2
-					tr
-							each value, index in list
-								th=value
-							th(width=300)
-
-				tbody
-					td(rowspan=11)
+				tr(class=(i % 2 == 0) ? 'odd' : 'even')
+					td
 						include select_colors.pug
-					- for (var i = 0; i < 10; ++i) {
-
-						tr(class=(i % 2 == 0) ? 'odd' : 'even')
-							td
-								include select_colors.pug
-							td
-								include select_colors.pug
-							td
-					- }
-					tr
-						td
-						td
-						td
-							include selector_cards.pug
-						td
+					td
+						include select_colors.pug
+					td
+			- }
+			tr
+				td
+				td
+				td
+					include selector_cards.pug
+				td
