@@ -2,15 +2,28 @@ $(document).ready(function(){
 	$(window).bind('beforeprint', function(){
 		$('select').each(function(){
 			if($(this).hasClass("color")){
-				$(this).parent("span").after($('<span class="select-print noscreen" style="color:'+ $(this).find('option:selected').val()+'!important;font-size:40px">'
-				+ $(this).find('option:selected').text() + '</span>'));
+				if($(this).prop('selectedIndex')==5){
+					$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:-1px;left:5px;color:'+ $(this).find('option:selected').val()+'!important;font-size:20px">'
+					+ $(this).find('option:selected').text() + '</span>'));
+				}
+				else if ($(this).prop('selectedIndex')<5) {
+					$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:0px;left:5px;color:'+ $(this).find('option:selected').val()+'!important;font-size:30px">'
+					+ $(this).find('option:selected').text() + '</span>'));
+				}
+				else {
+					$(this).parent("span").after($('<span class="select-print noscreen" style="color:'+ $(this).find('option:selected').val()+'!important;font-size:20px">'
+					+ $(this).find('option:selected').text() + '</span>'));
+					$(this).parent("span").parent("td").find(">:nth-child(2)").addClass("noprint");
+				}
+
 			}
 			else if($(this).hasClass("letter")){
-				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:3px;left:20px;color:white!important;font-size:18px">'
-				+ $(this).find('option:selected').text() + '</span> <img class="select-print noscreen" src="../images/hexa.png" style="position: relative;top: 0px;right: 0px;z-index:-1;width:30px;">'));
+				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:2px;left:22px;color:white!important;font-size:16px">'
+				+ $(this).find('option:selected').text() + '</span> <img class="select-print noscreen" src="../images/hexa.png" style="position: relative;top: 0px;right: 2px;z-index:-1;padding		:3px;width:30px;">'));
+
 			}
 			else if($(this).hasClass("nbr")){
-				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:3px;left:-15px;color:white!important;font-size:18px">'
+				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:2px;left:-17px;color:white!important;font-size:16px">'
 				+ $(this).find('option:selected').text() + '</span>'));
 			}
 			else {
@@ -33,6 +46,13 @@ $(document).ready(function(){
 				else{
 					$(this).removeClass("redText");
 					$(this).addClass("blackText");
+				}
+
+				if($(this).prop('selectedIndex')==6 || $(this).prop('selectedIndex')==7){
+					$(this).parent("span").parent("td").find(">:first-child").addClass("hide");
+				}
+				else {
+					$(this).parent("span").parent("td").find(">:first-child").removeClass("hide");
 				}
 			});
 		}

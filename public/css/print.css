@@ -1,11 +1,13 @@
 .noscreen { display : none;}
-
+.hide{display: none;}
 @media print {
-	.noprint { display: none; }
 	.noscreen { display: inline; }
+	.noprint { display: none; }
+	.hide{display: none}
 
 	header, nav, footer {
 		display: none;
 	}
-	td{width:auto}
+	table{width:100%}
+	td{font-family: monospace; font: bold}
 }
