@@ -19,7 +19,7 @@ $(document).ready(function(){
 			}
 			else if($(this).hasClass("letter")){
 				$(this).parent("span").after($('<span class="select-print noscreen" style="position: relative;top:0px;left:22px;color:white!important;font-size:16px">'
-				+ $(this).find('option:selected').text() + '</span> <img class="select-print noscreen" src="../images/hexa.png" style="position: relative;top: 0px;right: 2px;z-index:-1;padding		:3px;width:30px;">'));
+				+ $(this).find('option:selected').text() + '</span> <img class="select-print noscreen" src="/images/hexa.png" style="position: relative;top: 0px;right: 2px;z-index:-1;padding		:3px;width:30px;">'));
 
 			}
 			else if($(this).hasClass("nbr")){
