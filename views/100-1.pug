@@ -9,11 +9,11 @@ block append head
 		<link rel="stylesheet" href="css/print.css" media="print">
 		<link rel="stylesheet" href="css/table.css">
 
-mixin table-title(name,numbr)
+mixin table-title(name,number)
 	div(class="entete")
-		span(class="log") <img src="images/logo.png"/>
-		span(class="ttle")= name
-		span(class="numb")= numbr
+		span(class="logo") <img src="images/logo.png"/>
+		span(class="title")= name
+		span(class="number")= number
 
 block content
 
@@ -33,7 +33,7 @@ block content
 					tr
 						th(colspan=9) Ouverture
 					tr
-						- for (var i = 0; i < 3; ++i) {
+						- for (var i = 0; i < 4; ++i) {
 							each value, index in list
 								th=value
 						- }
@@ -41,7 +41,7 @@ block content
 				tbody
 				- for (var i = 0; i < 10; ++i) {
 					tr(class=(i % 2 == 0) ? 'odd' : 'even')
-						- for (var j = 0; j < 3; ++j) {
+						- for (var j = 0; j < 4; ++j) {
 								td
 									include selector_cards.pug
 								td
@@ -53,11 +53,46 @@ block content
 				$(document).ready(function(){
 					$(window).bind('beforeprint', function(){
 						$('select').each(function(){
-							$(this).parent("span").after($('<span class="select-print noscreen" style="color:'+ $(this).find('option:selected').val()+'!important;font-size:40px">'
-							+ $(this).find('option:selected').text() + '</span>'));
+							if($(this).hasClass("color")){
+								$(this).parent("span").after($('<span class="select-print noscreen" style="color:'+ $(this).find('option:selected').val()+'!important;font-size:40px">'
+								+ $(this).find('option:selected').text() + '</span>'));
+							}
+							else if($(this).hasClass("letter")){
+								$(this).parent("span").after($('<span class="select-print noscreen" style="font-size:24px">'
+								+ $(this).find('option:selected').text() + '</span>'));
+							}
+							else if($(this).hasClass("nbr")){
+								$(this).parent("span").after($('<span class="select-print noscreen" style="font-size:24px">'
+								+ $(this).find('option:selected').text() + '</span>'));
+							}
+							else {
+								$(this).parent("span").after($('<span class="select-print noscreen" style="font-size:24px">'
+								+ $(this).find('option:selected').text() + '</span>'));
+							}
 						});
 					});
 					$(window).bind('afterprint', function(){
 						$('.select-print').remove();
 					});
+
+					$('select').each(function(){
+						if($(this).hasClass("color")){
+							$(this).change(function(){
+								if($(this).find('option:selected').attr('class')=="redText"){
+									$(this).removeClass("blackText");
+									$(this).addClass("redText");
+								}
+								else{
+									$(this).removeClass("redText");
+									$(this).addClass("blackText");
+								}
+							});
+						}
+					});
+
+					$('select').each(function(){
+						$(this).prop('selectedIndex', Math.floor(Math.random() * ($(this).children('option').length-1))+1).trigger('change');
+					});
+
+
 				})

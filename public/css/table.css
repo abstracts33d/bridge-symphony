@@ -20,11 +20,31 @@ table{
 }
 
 
-.blackText{ color: black !important; }
 .redText{ color: red !important;}
 
-.entete{}
-.log{display:inline;float:left;width:10%;}
-.log img{width:50px;}
-.ttle{display:table;margin:0 auto;text-align:center; font-size:24px;width:80%;float:left;}
-.numb{float:right; font-size:24px;width:10%;}
+.entete{
+	display: inline-block;
+	width:100%;
+	margin:3px
+}
+
+.logo{
+	display:inline-block;
+	float:left;
+	width:20%;
+	vertical-align: middle;
+}
+.logo img{width:50px;}
+
+.title{
+	font-size:24px;
+	vertical-align: middle;
+}
+
+.number{
+	display:inline-block;
+	float:right;
+	width:20%;
+	font-size:24px;
+	vertical-align: middle;
+}
