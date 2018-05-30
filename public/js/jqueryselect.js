@@ -58,9 +58,10 @@ $(document).ready(function(){
 		}
 	});
 
-	$('select').each(function(){
-		$(this).prop('selectedIndex', Math.floor(Math.random() * ($(this).children('option').length-1))+1).trigger('change');
-	});
+	//randomize table
+	// $('select').each(function(){
+	// 	$(this).prop('selectedIndex', Math.floor(Math.random() * ($(this).children('option').length-1))+1).trigger('change');
+	// });
 
 
 })
