@@ -5,13 +5,13 @@ block table
 	table(border="1")
 		thead
 			tr
-				th(colspan=9)
+				th(colspan=13)
 					+table-title('Encheres a deux', "100-1")
 
 			tr
-				th(colspan=9) L'ouverture
+				th(colspan=13) L'ouverture
 			tr
-				- for (var i = 0; i < 4; ++i) {
+				- for (var i = 0; i < 6; ++i) {
 					each value, index in list
 						th=value
 				- }
@@ -19,7 +19,7 @@ block table
 		tbody
 		- for (var i = 0; i < 10; ++i) {
 			tr(class=(i % 2 == 0) ? 'odd' : 'even')
-				- for (var j = 0; j < 4; ++j) {
+				- for (var j = 0; j < 6; ++j) {
 						td
 							include selector_cards.pug
 						td

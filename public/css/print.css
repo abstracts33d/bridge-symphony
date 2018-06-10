@@ -1,5 +1,8 @@
 .noscreen { display : none;}
 .hide{display: none;}
+
+@page { size: auto;  margin: 0mm; }
+
 @media print {
 	.noscreen { display: inline; }
 	.noprint { display: none; }
@@ -8,6 +11,6 @@
 	header, nav, footer {
 		display: none;
 	}
-	table{width:100%}
+	body,.container,.col-md-12,table{width:100%}
 	td{width:auto;font-family: monospace; font: bold}
 }
