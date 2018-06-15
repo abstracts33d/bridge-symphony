@@ -1,0 +1,663 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 31 mars 2018, 15:28:32
+    Author     : NOAHISSA
+*/
+/* DivTable.com */
+body{
+  font-family: "Source code pro", Verdana, sans-serif;
+  background:;
+}
+
+/*menu*/
+.menu{text-align:center;font-size: 13pt;}
+.menu h5{text-decoration: underline;font-size: 17pt;font-weight: bold;}
+.menu h6{
+      text-decoration: underline;
+      font-size: 10pt;
+      font-weight: bold;
+      padding: 2px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+.menu p{padding:5px;}
+.level-1{padding-left: 0;margin-bottom: 0px;}
+.level-2{margin-left:30px;padding-left: 0;margin-bottom: 0px;}
+.level-3{margin-left:/*30px*/;background: silver;padding-left: 0;margin-bottom: 0px;font-size:13pt;}
+.mlist {
+    position: relative;
+    display: block;
+    padding:0.25rem 8.25rem;
+    /* margin-bottom: -1px; */
+    background-color: /*#90ee90*/;
+    border:0 /*1px solid rgba(0,0,0,.125)*/;
+}
+.mlist:first-child {
+    border-top-left-radius: 46.25rem;
+    border-top-right-radius: 56.25rem;
+}
+.mlist h6 {text-decoration: underline;}
+/*    --------------------- */
+.intro {text-align:left;}
+.intro h3 {font-size: /*25pt*/;text-align:center;text-decoration: underline;}
+.intro h4 {font-size:/* 24pt*/;text-align:;text-decoration: underline;}
+.intro p {letter-spacing: /*.50rem*/;padding:/*25px*/;font-size: 15pt;}
+.intro I {background: lightgreen;font-size: 12pt;padding: /*5px*/;}
+.txt p{
+    padding: /*2px*/;
+    font-family: "Source code pro", Verdana, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: lighter;
+}
+.txt h3{
+    text-decoration: underline;
+    font-size: /*24px*/;
+    padding: 3px;
+}
+.txt h4{
+    text-decoration: underline;
+    font-size: 23px;
+    padding: 3px;
+}
+.titre5{
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 3px;
+}
+.txt I{
+    padding: 3px;
+    font-size: 17px;
+    background: lightcyan;
+
+}
+
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid black;
+	display: table-cell;
+	padding: 15px/*3px 10px*/;
+        width:196px;
+        height:50px/*63px*/;
+
+}
+/*.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+  width: 190px;
+  height:65px;
+}*/
+.divTableCello, .divTableHead {
+	border: ;
+	display: table-cell;
+	padding: 3px 10px;
+        width:10%;
+        /*height:50px;*/
+}
+.divTableCello, .divTableRow {
+
+        height:60px;
+       /* width:120px;*/
+}
+.divTableCellCom, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+        width:25%;
+}
+.divTableCell, .divTableRow {
+
+        height:/*60px*/;
+
+}
+
+.divTableCellConc {
+	border: 1px solid #999999;
+        height:150px;
+        width:;
+}
+.divTableCellCa{
+	border:1px solid #999999;
+        height:200px;
+       /* width:120px;*/
+}
+.hauteur {
+	border:;
+        position:relative;
+        top:/*10px*/;
+        font-size:12pt;
+        /*height:50px;*/
+       /* width:120px;*/
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+.divTableCellCent, .divTableHead {
+	border:/* 1px solid #999999*/;
+	display: table-cell;
+	padding: 3px 10px;
+        width:10%;
+        /*height:70px;*/
+
+       /* width:120px;*/
+}
+.divTableCellCent, .divTableRow {
+
+        height:50px;
+       /* width:120px;*/
+}
+.divTableCellTroisCent, .divTableHead {
+	border:/*1px solid #999999*/;
+	/*display: table-cell;
+	padding: 3px 10px;*/
+        width:/*15%*/;
+
+
+       /* width:120px;*/
+}
+.divTableCellTroisCent, .divTableRow {
+
+       /* height:65px;
+       width:120px;*/
+}
+.carteVerti h6{font-size:20pt;}
+.comment I{font-size: 10px;}
+.hauteur I{font-size: 12px;float:right;margin-right:5px;}
+.hauteur h6 {
+	font-size:18pt/*16pt*/;
+        /*height:60px;*/
+       /* width:120px;*/
+}
+.hauteur img {
+	font-size:16pt;
+        height:30px;
+        width:30px;
+}
+.tdcent td{
+    width: 50%;
+    height: ;
+    border:solid 1px;
+}
+.tdtcent td{
+    width: /*15%*/;
+    height:50px ;
+    border:solid 1px;
+}
+
+/*------------------------fin tableau--------------------------------*/
+/*------------------------losange--------------------------------*/
+
+
+
+/*
+ * ==== LOSANGE DERNIER
+ */
+.losange{
+
+      position: relative;
+    width: 40px;
+    height: 23.09px;
+    background-color: black ;
+    color: white;
+    margin: 10px 15%/*0 35%*/ /*11.55px 30%*/;
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.6); */
+    border-left: /*solid 1px black*/;
+    border-right: /*solid 1px black*/;
+    left: 5px;
+}
+.losange:before,
+.losange:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 28.28px;
+  height: 28.28px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 5.8579px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+.losange:before {
+
+      top: -14.1421px;
+    border-top:/* solid 1.4142px #333333*/;
+    border-right:/* solid 1.4142px #333333*/;
+
+}
+
+.losange:after {
+  bottom: -14.1421px;
+  border-bottom: /*solid 1.4142px #333333*/;
+  border-left:/* solid 1.4142px #333333*/;
+
+
+/*.losange:before{
+	content:'';
+	border: 1px solid #069;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #069;
+	width:0;
+	height:0;
+	position: absolute;
+	top:19px;
+	left:-20px;*/
+}
+.losange h6 {
+
+      display: block;
+    position: absolute;
+    top: -9.42265px;
+    left: 0px;
+    width: 38px;
+    height: 21.9393px;
+    z-index: 2;
+    background: inherit;
+}
+/* ------------------------------------------------*/
+/*
+ * ==== hexa DERNIER
+ */
+.hexa{
+  position: relative;
+   width: 40px;
+   height: 23.09px;
+   background-color:black;
+   color:white;
+   margin:10px 15%/*0 35%*/ /*11.55px 30%*/;
+   box-shadow: 0 0 20px rgba(0,0,0,0.6);
+   border-left: /*solid 1px black*/;
+   border-right: /*solid 1px black*/;
+     left:29px;
+
+/*	margin:0 auto;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #069;
+	position: relative;*/
+}
+.hexa:before,
+.hexa:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 28.28px;
+  height: 28.28px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 5.8579px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+.hexa:before {
+  top: -14.1421px;
+ border-top: /*solid 1.4142px #333333*/;
+ border-right: /*solid 1.4142px #333333*/;
+
+}
+
+.hexa:after {
+  bottom: -15.1421px;
+  border-bottom:/* solid 1.4142px #333333*/;
+  border-left:/* solid 1.4142px #333333*/;
+
+
+
+}
+.hexa h6 {
+  display: block;
+  position: absolute;
+  top:-9.42265px;
+  left:1px;
+  width:38px;
+  height:21.9393px;
+  z-index: 2;
+  background: inherit;
+}
+
+
+
+
+/* ------------------------------------------------*/
+
+.conteneurun{
+    float:left;
+    text-align:center;
+    border:solid 1px;
+    border-bottom:/*0*/;
+    background:rgba(0,0,0,.075);
+    padding:/*10px*/;margin:/*2px 2px*/;
+    height:/*896px*/;
+    width:100%;
+    padding:5px;
+}
+.conteneurtitre1{
+    float:left;
+    text-align:center;
+    border:solid 1px;
+    border-bottom:0;
+    background: white;
+    padding:2px;margin:/*0 2px*/;
+    height:;
+    width:100%;
+}
+.logo{float:left;width:10%;}
+.logo-tete{text-align:center;}
+.logo-tete img {
+   width:180px;
+   height:180px;
+ }
+.caption{
+
+    /*   background: black; */
+    padding: 5px;
+    /* color: white; */
+    text-decoration: underline;
+    margin:/* 25px*/;
+}
+.caption img {
+    width:500px;
+    height:170px;
+  }
+.conteneurtitre1 img{
+             float:left;
+             text-align:;
+             border:;
+             background: ;
+             margin:/*3px*/;
+             width:/*5%*/;
+             height:50px;
+}
+.conteneurtitre1 h3{
+             float:left;
+             border:/*solid 1px*/;
+             background:;
+             color:;
+             margin-left:/*10px*/;
+             margin-right:/*10px*/;
+             padding-top:5px;
+             height:50px;
+             width:80%;
+}
+.conteneurnum1{
+              float:right;
+              border:solid 1px;
+              background:black;
+              color:white;
+              margin-left:;
+              margin-right: ;
+              padding:;
+              height:;
+              width:10%;
+}
+.conteneurintit1{
+    float:left;
+    border:solid 1px;
+    border-bottom:0;
+    background:white;
+    margin:/*0 2px*/;
+    margin-right: auto;
+    padding:2px;
+    height:;
+    width:100%;
+}
+.conteneurintit1 span{
+    font-size:16pt;
+    float:;
+    text-align:;
+    border:;
+    background: ;
+    margin:;
+    height:40px;
+}
+.conteneurintit1 h5{
+    border:/*solid 1px*/;
+    background: white;
+    width:/*400px*/;
+    float:;
+    margin-left:/*200px*/;
+    margin-top:10px;
+    height:40px;
+    padding:5px;
+}
+.intit1{
+    border:;
+    background: white;
+    width:/*400px*/;
+    float:left;
+    margin-left:100px;
+    margin-right:;
+    height:40px;
+    padding-top:10px;
+}
+.intit1 span {
+  border:/*solid 1px*/;
+  float:;
+  padding:8px/*5px*/;
+  margin-top:;
+  margin-right:;
+  width:;
+  height:;
+}
+.conteneurintit1 img{
+   border:;
+   float:/*left*/;
+   padding:;
+   margin-top:;
+   margin-right:;
+   width:30px/*40px*/;
+   height:30px/*40px*/;
+}
+
+.intit2{
+    float:left;
+    border:;
+    padding:4px;
+    margin-right:/*300px*/;
+    margin-top:6px;
+    background:;
+    color:;
+}
+.intit3{
+   border:;padding:;margin-top:;margin-right:10px;margin-top:10px;float:left;
+}
+.intit4{
+   border:;background: white;width:/*400px*/;float:left;margin-left:;margin-right:;height:40px;padding-top:;
+}
+.conteneurtab1 {
+    background: white;
+    border:solid 1px;
+    padding: ;
+    padding:  /* 0 1% */;
+    float: left;
+    width: 100%;
+    padding-left:10px;
+}
+.conteneurtab2 {
+    background: white;
+    border:/*solid 1px*/;
+    padding: ;
+    padding:  /* 0 1% */;
+    float: left;
+    width: 100%;
+    padding-left:/*10px*/;
+}
+.dtc {
+    background: ;
+    float: left;
+    border: ;
+    border-right: ;
+    margin: /* 10px */;
+    padding: /*2px*/;
+    width: 16%;
+    min-height: ;
+    margin-right: 0.6%;
+    margin-left: ;
+}
+
+.dtc table {
+    background: white;
+    width: 100%;
+    height: 429px;
+    border: ;
+    margin-top: 15px;
+    margin-left: /*45px*/;
+    margin: ;
+}
+.dtcprime {
+    background: ;
+    float: left;
+    border: ;
+    border-right: ;
+    margin: /* 10px */;
+    padding: /*2px*/;
+    width: 24%;
+    min-height: ;
+    margin-right: 1%;
+    margin-left: ;
+}
+.dtcprime table {
+    background: white;
+    width: 100%;
+    height: 429px;
+    border: ;
+    margin-top: 15px;
+    margin-left: /*45px*/;
+    margin: ;
+}
+
+.concdec{
+    background: white;
+    border: solid 1px;
+    margin: 0 2px;
+    padding: 2px;
+    width:/*98%*/;
+    height:110px/*80px*/;
+    clear:both;
+}
+.concase{
+    background: white;
+    border: solid 1px;
+    margin:;
+    padding: 2px;
+    width:70px;
+    height:70px;
+    position:relative;
+    top:60px/*8px*/;
+    left:45%;
+}
+.concase h6{font-size:2rem;}
+.tdtr{
+    background: white;
+    float:left;
+    border:solid 1px;
+    border-bottom:;
+    padding: /*2px*/;
+    width:50%;
+    min-height:;
+}
+.succ{background:Lavender; }
+.warn{background:Bisque; }
+.tcc{padding:0 5%;}
+#page{size:;border:solid 5px;}
+.page{
+
+      page-break-after:always;
+      /*   size: Landscape; */
+      border: /*solid 3px*/;
+      width: 100%;
+      height: /*800px*/;
+      padding:1%/* 3px*/;
+      clear:both;
+}
+.texto p{}
+/*.commentairescent{border:solid 1px;width:100%;height:60px;}*/
+
+/*******************************************************************************************/
+table.steelBlueCols {
+  border:/* 4px solid #555555*/;
+  background-color:/* #555555*/;
+  width: 100%;
+  height: 42px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.steelBlueCols td, table.steelBlueCols th {
+  border: 1px solid #555555;
+  padding: 3px 10px;
+}
+table.steelBlueCols tbody td {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  height:35px;
+  background:/*lavender*/;
+  text-align: center;
+}
+table.steelBlueCols td:nth-child(even) {
+  background:/* #398AA4*/;
+}
+table.steelBlueCols thead {
+  background: /*#398AA4*/;
+  border-bottom: /*10px solid #398AA4*/;
+}
+table.steelBlueCols thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-align:center;
+  border-left: /*2px solid #398AA4*/;
+}
+table.steelBlueCols thead th:first-child {
+  border-left: /*none*/;
+}
+
+table.steelBlueCols tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #398AA4;
+}
+table.steelBlueCols tfoot td {
+  font-size: 13px;
+}
+table.steelBlueCols tfoot .links {
+  text-align: right;
+}
+table.steelBlueCols tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #398AA4;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
