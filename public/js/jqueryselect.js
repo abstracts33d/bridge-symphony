@@ -56,6 +56,17 @@ $(document).ready(function(){
 				}
 			});
 		}
+		if($(this).hasClass("letter_unique")){
+			$(this).change(function(){
+				var chr = String.fromCharCode(64 + $(this).prop('selectedIndex'))
+
+				$( "th.one" ).text(chr +"1");
+				$( "th.two" ).text(chr +"2");
+				$( "th.three" ).text(chr +"3");
+				$( "th.four" ).text(chr +"4");
+
+			})
+		}
 	});
 
 	//randomize table
