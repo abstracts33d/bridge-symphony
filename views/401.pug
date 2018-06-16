@@ -1,14 +1,14 @@
 extends layout-table.pug
 block table
-	- var list = ["Ouv (n°1)", "Int(n°2)", "n°3", "Rép (n°4)"]
+	- var list = ["Ouv n°1", "Int n°2", "Rép n°3"	]
 	table(border="1")
 		thead
 			tr
 				th(colspan=5)
-					+table-title('Encheres competitives', "300-1")
+					+table-title('Encheres competitives', "401")
 
 			tr
-				th(colspan=5) Réponse (n°4) à l intervention du partenaire (n°2)
+				th(colspan=5) Réponses à l'ouverture du partenaire (n°1) après interventions du n°2
 			tr
 					each value, index in list
 						th=value
@@ -25,11 +25,8 @@ block table
 					td
 						include select_colors.pug
 					td
-						include select_colors.pug
-					td
 			- }
 			tr
-				td
 				td
 				td
 				td

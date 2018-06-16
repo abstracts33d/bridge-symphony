@@ -46,15 +46,12 @@ app.use('/payment_succes', payment_succes);
 app.use('/payment_cancelled', payment_cancelled);
 app.use('/tuto', tuto);
 
-app.get('/100-1', function (req, res) {
-  res.render("100-1")
-})
-
-app.get('/100-2', function (req, res) {res.render("100-2")})
-app.get('/200-1', function (req, res) {res.render("200-1")})
-app.get('/200-2', function (req, res) {res.render("200-2")})
-app.get('/300-1', function (req, res) {res.render("300-1")})
-app.get('/400-1', function (req, res) {res.render("400-1")})
+app.get('/101', function (req, res) {res.render("101")})
+app.get('/102', function (req, res) {res.render("102")})
+app.get('/201', function (req, res) {res.render("201")})
+app.get('/202', function (req, res) {res.render("202")})
+app.get('/301', function (req, res) {res.render("301")})
+app.get('/401', function (req, res) {res.render("401")})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

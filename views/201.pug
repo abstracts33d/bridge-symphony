@@ -5,10 +5,11 @@ block table
 		thead
 			tr
 				th(colspan=6)
-					+table-title("Encheres a deux", "200-1"	)
+					+table-title("Encheres a deux", "201"	)
 
 			tr
 				th(colspan=6) Reponses aux ouvertures de ...
+					include selector_letter.pug
 			tr
 				each value, index in list
 					th=value
