@@ -7,11 +7,10 @@ block table
 				th(colspan=6)
 					+table-title('Encheres a deux', "202")
 			tr
-				th(colspan=2) Réponse à l ouverture de -->
-				th
+				th(colspan=6)
+					span Réponse à l ouverture de -->
 					include select_colors.pug
-				th(colspan=2) et developpements Main:
-				th
+					span et developpements Main:
 					include selector_cards.pug
 			tr
 					each value, index in list
