@@ -3,6 +3,8 @@ extends layout.pug
 block append head
 	title= "Bridge Symphony - Tuto"
 	meta(name="description" content="Contactez Bridge Symphony le support didactique pour l enseignement du bridge et l'outil de progression innovant pour bridgeurs de tous niveaux")
+	style.
+		@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Diplomata|Fascinate+Inline|Niconne');
 
 	block append style
 		<link rel="stylesheet" href="css/bridgeskt.css">
@@ -21,14 +23,23 @@ block content
 	.container
 			.col-md-12
 				.page(style='text-align:center;background:;color:black;')
-					i(style='text-decoration:none;font-size: 14pt;') C'est bien joli mais comment peut-on s'en servir... ? Petit guide de l'utilisateur
+				.logo-tete <img src="images/logo.png"/>
+				.logo-tete
+					h3 BS TUTO
+				.container
+					.caption
+						<!--<img src="images/3p.png"/>-->
+						br
+						br
+						<!--<img src="images/3b.png"/>-->
+							i(style='text-decoration:none;font-size: 14pt;') C'est bien joli mais comment peut-on s'en servir... ? Petit guide de l'utilisateur
 					br
 					br
 
 					.menu
 
 						ul.list-group.text-center.level-1
-							li.list-group-item.mlist
+							li.mlist
 							p
 								| Les multiples usages et déclinaisons que propose BS aux enseignants, joueurs de tout niveau ou débutants ne sauraient se décrire dans un « mode d'emploi » précis ou exhaustif.
 							p
@@ -38,9 +49,9 @@ block content
 							a.btn.btn-success(target='blank', href='/pdf/guide.pdf', role='button') Petit Guide Utilisateur
 							br
 							br
-							i(style='color:;text-decoration:none;font-size: 11pt;text-align:left;background:white;padding:3px;') Les grilles illustrées se basent sur le SEF commenté et argumenté de Messieurs Bessis Quentin Cronier édition Le Bridgeur 2016/2017 T3 à paraître.
+							i(style='color:;text-decoration:none;font-size: 9pt;text-align:left;background:;padding:3px;') * Les grilles illustrées se basent sur le SEF commenté et argumenté de Messieurs Bessis Quentin Cronier édition Le Bridgeur 2016/2017 T3 à paraître.
 								br
-							i(style='color:;text-decoration:none;font-size: 11pt;text-align:left;background:white;padding:3px;') BS n'est pas une méthode (rappel), mais un moyen de conduire celle qui vous sied.
+							i(style='color:;text-decoration:none;font-size: 9pt;text-align:left;background:;padding:3px;') BS n'est pas une méthode (rappel), mais un moyen de conduire celle qui vous sied.
 								br
 								br
 								h4 Les PDF

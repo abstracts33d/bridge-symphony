@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 /* DivTable.com */
 body{
-  font-family: "Source code pro", Verdana, sans-serif;
+  font-family: "Source code pro", Paytone One, sans-serif;
   background:;
 }
 
@@ -373,6 +373,19 @@ body{
 }
 .logo{float:left;width:10%;}
 .logo-tete{text-align:center;}
+.logo-tete h3{
+    font-family: 'Diplomata';
+    font-size: 35pt;
+    color: black;
+    background-image: url('http://www.bridgesymphony.com/images/3p.png');
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 20pt;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-shadow: 3px -2px white;
+}
 .logo-tete img {
    width:180px;
    height:180px;
@@ -382,8 +395,10 @@ body{
     /*   background: black; */
     padding: 5px;
     /* color: white; */
-    text-decoration: underline;
+    text-decoration: ;
     margin:/* 25px*/;
+    text-align:center;
+
 }
 .caption img {
     width:500px;
