@@ -3,13 +3,21 @@ extends layout.pug
 block append head
 	title= "Bridge Symphony - Tuto"
 	meta(name="description" content="Contactez Bridge Symphony le support didactique pour l enseignement du bridge et l'outil de progression innovant pour bridgeurs de tous niveaux")
-	style.
-		@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Diplomata|Fascinate+Inline|Niconne');
+
 
 	block append style
-		<link rel="stylesheet" href="css/bridgeskt.css">
+		<link rel="stylesheet" href="css/bridgeskt.css" media="all">
+
+
+
 
 block content
+	include centun.pug
+	include decentun.pug
+	include decentde.pug
+	include centde.pug
+	include troiscentun.pug
+	include quatrecentun.pug
 	mixin table-title(name,numbr)
 		div(class="entete")
 			span(class="log") <img src="images/logo.png"/>
@@ -22,69 +30,112 @@ block content
 
 	.container
 			.col-md-12
-				.page(style='text-align:center;background:;color:black;')
-				.logo-tete <img src="images/logo.png"/>
-				.logo-tete
-					h3 BS TUTO
-				.container
-					.caption
-						<!--<img src="images/3p.png"/>-->
+				#cadre-menu
+					#bordure-menu
+						ul
+							li
+								a(href="#intro") Présentation et Exploitation
+							li
+								a(href="#101") Grille 101
+							li
+								a(href="#201") Grille 201
+							li
+								a(href="#202") Grille 202
+							li
+								a(href="#102") Grille 102
+							li
+								a(href="#301") Grille 301
+							li
+								a(href="#401") Grille 401
+					#bouton-menu
+				.page(style='margin-top:70px;text-align:center;background:;color:black;')
+					.logo-tete <img src="images/logo.png"/>
+						.caption
+							<!--<img src="images/3p.png"/>-->
+							br
+							br
+							<!--<img src="images/3b.png"/>-->
+								i(style='text-decoration:none;font-size: 14pt;') C'est bien joli mais comment peut-on s'en servir... ? Petit guide de l'utilisateur
+					.logo-tete
+						h3 BS TUTO
+					#intro.intro
+						i Intro
+						p
+							| Les multiples usages et déclinaisons que propose BS aux enseignants, joueurs de tout niveau ou débutants ne sauraient se décrire dans un « mode d'emploi » précis ou exhaustif.
+						p
+							| Pour le partisan d'une pédagogie active que je suis il s’avère cependant souhaitable de vous proposer ici des pistes d'investigation et des exemples de présentation
+							| d'une grande adaptabilité.
+						i
+							| BS n'est pas une méthode (rappel), mais un moyen de conduire celle qui vous sied.
+						h3 Présentation et Exploitation
+						h4 a) Présentation
+						p
+							| Je vous présente ici d'une façon plus concrète l'usage pédagogique que je peux faire
+							| de Bridge Symphony dans les ateliers d'initiation que j'anime ou dans le travail de mise
+							| au point toujours nécessaire entre partenaires (...ou à titre personnel).
+						p
+							| Donner vie à ce support interactif s'est réalisé par la mise en forme de grilles de travail et d'exercices
+							| (voir c)
+						p
+							| Les version vierges ou thématiques sont disponibles en mode éditables en ligne(BS Online) ou télèchargeables au format PDF.
+
+						h4 b) Avant les grilles: "Prise en main" pour débutants
+
+						p
+							| Une fois la règle du jeu précisée -et ce n'est déjà pas simple -se posent bien des problèmes ;
+						p
+							| --> Estimation des mains : points H, HL;distribution ( régulière, bicolore, unicolore ) sans évoquer
+							| bien sur la position ou la vulnérabilité
+						p  --> Déroulement des enchères : hiérarchie des couleurs, niveau de manche ...
+						p  Nul besoin de nos grilles jusque là.
+						p
+							| Néanmoins le choix judicieux de quelques mains BS se révèle efficace et pratique pour illustrer nos dires .
+						i
+							| Rappel qui vaut aussi pour la suite : la carte "typologie" permet de selectionner selon vos préférences ces "mains - exemples"
+						p
+							| Enfin, la prise en mains des cartes BS à ce stade par ce public néophyte a suscité de façon unanime un attrait ludique et une curiosité
+							| qui se sont averés très dynamiques ( générateurs de questions ).
+						h4 c) Avec les grilles
+						p
+							| Vous sont présentées ci-après et pour exemples six grilles partiellement illustrées qui mettent au travail les six thématiques ici déclinées .
+						p
+							| --> 101 / 201 / 202 : enchères " à deux " (dans le silence adverse) .
+						p
+							| --> 102 / 301 / 401 : enchères compétitives .
+						p
+							|Pour chacune d'elles vous disposez de deux modes d'édition :
+						p
+							| --> En format PDF : il offre plusieurs options imprimables ( thématique, illustrée, modèle vièrge ... ) .
+						p
+							| --> BS Online : version éditable en ligne .
+						p
+							| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cliquer sur un selecteur (une case...) ouvre le bloc de caractère adéquat pour votre propre édition .
+						h4 Remarque :
+						p Seul le modèle 200 préfère une impression format portrait.
 						br
+						i
+							| Les grilles illustrées se basent sur le SEF commenté et argumenté de Messieurs Bessis - Quentin - Cronier édition Le Bridgeur 2016/2017 T3 à paraître.
 						br
-						<!--<img src="images/3b.png"/>-->
-							i(style='text-decoration:none;font-size: 14pt;') C'est bien joli mais comment peut-on s'en servir... ? Petit guide de l'utilisateur
-					br
-					br
 
-					.menu
+				.page#101
+					+centun
+				.page#201
+					+decentun
+				.page#202
+					+decentde
 
-						ul.list-group.text-center.level-1
-							li.mlist
-							p
-								| Les multiples usages et déclinaisons que propose BS aux enseignants, joueurs de tout niveau ou débutants ne sauraient se décrire dans un « mode d'emploi » précis ou exhaustif.
-							p
-								| Pour le partisan d'une pédagogie active que je suis il s’avère cependant souhaitable de vous proposer ici des pistes d'investigation au moyen de grilles de travail disponibles sous differents formats ainsi qu'un fichier pdf explicatif.
-
-							br
-							a.btn.btn-success(target='blank', href='/pdf/guide.pdf', role='button') Petit Guide Utilisateur
-							br
-							br
-							i(style='color:;text-decoration:none;font-size: 9pt;text-align:left;background:;padding:3px;') * Les grilles illustrées se basent sur le SEF commenté et argumenté de Messieurs Bessis Quentin Cronier édition Le Bridgeur 2016/2017 T3 à paraître.
-								br
-							i(style='color:;text-decoration:none;font-size: 9pt;text-align:left;background:;padding:3px;') BS n'est pas une méthode (rappel), mais un moyen de conduire celle qui vous sied.
-								br
-								br
-								h4 Les PDF
-									.page
-										.margin
-											a(target='_blank',href='/pdf/grilles_thematiques_2.pdf') Grilles Thematiques : Encheres a deux
-											br
-											a(target='_blank',href='/pdf/grilles_thematiques_comp.pdf') Grilles Thematiques : Encheres competitives
-											br
-											a(target='_blank',href='/pdf/grilles_vierges.pdf') Grilles Vierges
-											br
+				.page#102
+					+centde
+				.page#301
+					+troiscentun
+				.page(style='margin-bottom:70px;')#401
+					+quatrecentun
 
 
-								h4 BS Online (éditables)
-									.page
-										.margin
-											h6  a) ENCHERES A DEUX
-											a(target='_blank',href='/101') Grille thematique 101 : l'ouverture
-											br
-											a(target='_blank',href='/201') Grille thematique 201 : Reponse à l'ouverture
-											br
-											a(target='_blank',href='/202') Grille thematique 202 : développement après réponse
-											br
-											h6  b)ENCHERES COMPETITIVES
-											a(target='_blank',href='/102') Grille thematique 102 : Intervention du n°2
-											br
-											a(target='_blank',href='/301') Grille thematique 301 :Réponse (n°4) à l'intervention du partenaire (n°2)
-											br
-											a(target='_blank',href='/401') Grille thematique 401 : Réponses à l'ouverture du partenaire (n°1) après interventions du n°2
-											br
 
 
 
 
 block append scripts
 	script(src='js/triangles-tuto-min.js')
+	script(src='js/menu-fixe.js')

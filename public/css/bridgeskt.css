@@ -7,12 +7,13 @@ and open the template in the editor.
     Created on : 31 mars 2018, 15:28:32
     Author     : NOAHISSA
 */
-/* DivTable.com */
+/* DivTable.com
 body{
   font-family: "Source code pro", Paytone One, sans-serif;
   background:;
-}
-
+}*/
+/* Remise � zero pour compatibilit� des navigateur */
+html,body,div,span,ul,li{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}a {text-decoration:none;}
 /*menu*/
 .menu{text-align:center;font-size: 13pt;}
 .menu h5{text-decoration: underline;font-size: 17pt;font-weight: bold;}
@@ -41,12 +42,25 @@ body{
     border-top-right-radius: 56.25rem;
 }
 .mlist h6 {text-decoration: underline;}
-/*    --------------------- */
-.intro {text-align:left;}
-.intro h3 {font-size: /*25pt*/;text-align:center;text-decoration: underline;}
-.intro h4 {font-size:/* 24pt*/;text-align:;text-decoration: underline;}
-.intro p {letter-spacing: /*.50rem*/;padding:/*25px*/;font-size: 15pt;}
-.intro I {background: lightgreen;font-size: 12pt;padding: /*5px*/;}
+
+.intro {
+
+    text-align: left;
+    padding: 15px;
+    background:/* white*/;
+    margin:10px 0;
+}
+.exploit {
+
+    text-align: left;
+    padding: 85px;
+    background: white;
+    margin:10px 0;
+}
+/* .intro h3 {font-size:;text-align:center;text-decoration: underline;}
+.intro h4 {font-size:;text-align:;text-decoration: underline;}
+.intro p {letter-spacing: ;padding:;font-size: 15pt;margin: 10px;}
+.intro I {background: lightgreen;font-size: 12pt;padding:;}*/
 .txt p{
     padding: /*2px*/;
     font-family: "Source code pro", Verdana, sans-serif;
@@ -222,8 +236,8 @@ body{
       position: relative;
     width: 40px;
     height: 23.09px;
-    background-color: black ;
-    color: white;
+    background-color:AquaMarine/*lightgrey*//* black #64C7CC*/;
+   color:black;
     margin: 10px 15%/*0 35%*/ /*11.55px 30%*/;
     /* box-shadow: 0 0 20px rgba(0,0,0,0.6); */
     border-left: /*solid 1px black*/;
@@ -280,6 +294,7 @@ body{
     height: 21.9393px;
     z-index: 2;
     background: inherit;
+    font-size:14pt;
 }
 /* ------------------------------------------------*/
 /*
@@ -289,8 +304,8 @@ body{
   position: relative;
    width: 40px;
    height: 23.09px;
-   background-color:black;
-   color:white;
+   background-color:AquaMarine/*lightgrey*//* black #64C7CC*/;
+   color:black;
    margin:10px 15%/*0 35%*/ /*11.55px 30%*/;
    box-shadow: 0 0 20px rgba(0,0,0,0.6);
    border-left: /*solid 1px black*/;
@@ -338,11 +353,12 @@ body{
   display: block;
   position: absolute;
   top:-9.42265px;
-  left:1px;
+  left:0;
   width:38px;
   height:21.9393px;
   z-index: 2;
   background: inherit;
+  font-size:14pt;
 }
 
 
@@ -350,16 +366,18 @@ body{
 
 /* ------------------------------------------------*/
 
-.conteneurun{
-    float:left;
-    text-align:center;
-    border:solid 1px;
-    border-bottom:/*0*/;
-    background:rgba(0,0,0,.075);
-    padding:/*10px*/;margin:/*2px 2px*/;
-    height:/*896px*/;
-    width:100%;
-    padding:5px;
+.conteneurun {
+    float: left;
+    text-align: center;
+    border: solid 1px;
+    border-bottom: /*0*/;
+    background: white;
+    padding: /*10px*/;
+    margin: /*2px 2px*/;
+    height: 1020px;
+    width: 100%;
+    padding: /*5px*/;
+    margin-bottom: 15px;
 }
 .conteneurtitre1{
     float:left;
@@ -372,7 +390,7 @@ body{
     width:100%;
 }
 .logo{float:left;width:10%;}
-.logo-tete{text-align:center;}
+.logo-tete{text-align:center;margin-top: 50px;}
 .logo-tete h3{
     font-family: 'Diplomata';
     font-size: 35pt;
@@ -443,7 +461,7 @@ body{
     margin:/*0 2px*/;
     margin-right: auto;
     padding:2px;
-    height:;
+    height:55px;
     width:100%;
 }
 .conteneurintit1 span{
@@ -486,7 +504,7 @@ body{
 }
 .conteneurintit1 img{
    border:;
-   float:/*left*/;
+   float:right;
    padding:;
    margin-top:;
    margin-right:;
@@ -499,7 +517,7 @@ body{
     border:;
     padding:4px;
     margin-right:/*300px*/;
-    margin-top:6px;
+    margin-top:/*6px*/;
     background:;
     color:;
 }
@@ -510,7 +528,7 @@ body{
    border:;background: white;width:/*400px*/;float:left;margin-left:;margin-right:;height:40px;padding-top:;
 }
 .conteneurtab1 {
-    background: white;
+    background: #3b8a704f;
     border:solid 1px;
     padding: ;
     padding:  /* 0 1% */;
@@ -592,6 +610,28 @@ body{
     left:45%;
 }
 .concase h6{font-size:2rem;}
+.concdec1{
+    background: white;
+    border: solid 1px;
+    border-top: 0;
+    margin: 0 2px;
+    padding: 2px;
+    width:/*98%*/;
+    height:116px/*110px*/;
+    clear:both;
+}
+.concase1{
+    background: white;
+    border: solid 1px;
+    margin:;
+    padding: 2px;
+    width:70px;
+    height:70px;
+    position:relative;
+    top:60px/*60px*/;
+    left:45%;
+}
+.concase1 h6{font-size:2rem;}
 .tdtr{
     background: white;
     float:left;
@@ -605,16 +645,26 @@ body{
 .warn{background:Bisque; }
 .tcc{padding:0 5%;}
 #page{size:;border:solid 5px;}
-.page{
-
-      page-break-after:always;
-      /*   size: Landscape; */
-      border: /*solid 3px*/;
-      width: 100%;
-      height: /*800px*/;
-      padding:1%/* 3px*/;
-      clear:both;
+.page {
+    page-break-before: always;
+    page-break-after: always;
+    /* size: Landscape; */
+    border: /*solid 3px*/;
+    width: 100%;
+    height: /*800px*/;
+    padding: /* 1% */;
+    padding: 2%;
+    margin-bottom: 10px;
+    /* margin-top: 65px; */
+    /* clear: both; */
+    float: left;
+    background: #ffffff73;
 }
+
+.page h3 {font-size: /*25pt*/;text-align:center;text-decoration: underline;}
+.page h4 {font-size:/* 24pt*/;text-align:;text-decoration: underline;}
+.page p {letter-spacing: /*.50rem*/;padding:/*25px*/;font-size: 15pt;margin: 10px;}
+.page I {background: lightgreen;font-size: 12pt;padding: /*5px*/;}
 .texto p{}
 /*.commentairescent{border:solid 1px;width:100%;height:60px;}*/
 
@@ -676,3 +726,62 @@ table.steelBlueCols tfoot .links a{
   padding: 2px 8px;
   border-radius: 5px;
 }
+
+/* Menu DEROULANT */
+#cadre-menu {
+	position:fixed;
+	left:-170px;
+	overflow:hidden;
+	top:25%;
+	width:215px;
+	font:12px Arial;
+  z-index: 100;
+}
+#bordure-menu {
+	float:left;
+	background:#ddd;
+	width:170px;
+	margin:0px;
+	padding:25px;
+	padding-top:30px;
+	border:5px solid #999;
+	border-left:none;
+}
+#bordure-menu ul {
+	list-style: square inside;
+}
+#bordure-menu ul li {
+	padding-bottom:8px;
+}
+#bordure-menu ul li a {
+	color:#555;
+}
+#bordure-menu ul li a:hover {
+	text-decoration:underline;
+}
+#bouton-menu {
+	float:right;
+	width:45px;
+	margin:0px;
+	height:161px/*136px*/;
+  background:#aaa url('../images/titre-sommaire-verti2.jpg') top right no-repeat;
+	/*background:#aaa url('../images/fond-demo-menu.jpg') top right no-repeat;*/
+}
+
+.fter {
+    position: relative;
+    top: 45px;
+    border: /*solid 1px*/;
+    clear: both;
+    /* margin-left: 25%; */
+    /* margin-right: 25%; */
+    margin: 0px 25%;
+    /* float: left; */
+    background: #c2dbd3;
+    padding: 1%;
+    border: solid 1px;
+}
+.fter a{
+    margin-right:30px;
+    background: /*black*/;
+  }
