@@ -12,12 +12,6 @@ block append head
 
 
 block content
-	include centun.pug
-	include decentun.pug
-	include decentde.pug
-	include centde.pug
-	include troiscentun.pug
-	include quatrecentun.pug
 	mixin table-title(name,numbr)
 		div(class="entete")
 			span(class="log") <img src="images/logo.png"/>
@@ -93,20 +87,48 @@ block content
 							| Les grilles illustrées se basent sur le SEF commenté et argumenté de Messieurs Bessis - Quentin - Cronier édition Le Bridgeur 2016/2017 T3 à paraître.
 						br
 
-				.page#101
-					+centun
-				.page#201
-					+decentun
-				.page#202
-					+decentde
-
-				.page#102
-					+centde
-				.page#301
-					+troiscentun
-				.page(style='margin-bottom:70px;')#401
-					+quatrecentun
-
+				div.center
+					<embed src="/pdf/101_4.pdf" width="900" height="690" type='application/pdf'>
+				div.center
+					.fter.text-center
+						small
+							a.btn.btn.btn-primary(target="_blank" href="/pdf/101.pdf" role="button") Editer PDF
+							a.btn.btn.btn-primary(target="_blank" href="/101" role="button") BS Online
+				div.center
+					<embed src="/pdf/102_4.pdf" width="900" height="690" type='application/pdf'>
+				div.center
+					.fter.text-center
+						small
+							a.btn.btn.btn-primary(target="_blank" href="/pdf/102.pdf" role="button") Editer PDF
+							a.btn.btn.btn-primary(target="_blank" href="/102" role="button") BS Online
+				div.center
+					<embed src="/pdf/201_3.pdf" width="900" height="1200" type='application/pdf'>
+				div.center
+					.fter.text-center
+						small
+							a.btn.btn.btn-primary(target="_blank" href="/pdf/201.pdf" role="button") Editer PDF
+							a.btn.btn.btn-primary(target="_blank" href="/201" role="button") BS Online
+				div.center
+					<embed src="/pdf/202_4.pdf" width="900" height="1200" type='application/pdf'>
+				div.center
+					.fter.text-center
+						small
+							a.btn.btn.btn-primary(target="_blank" href="/pdf/202.pdf" role="button") Editer PDF
+							a.btn.btn.btn-primary(target="_blank" href="/202" role="button") BS Online
+				div.center
+					<embed src="/pdf/301_4.pdf" width="900" height="690" type='application/pdf'>
+				div.center
+					.fter.text-center
+						small
+							a.btn.btn.btn-primary(target="_blank" href="/pdf/301.pdf" role="button") Editer PDF
+							a.btn.btn.btn-primary(target="_blank" href="/301" role="button") BS Online
+				div.center
+					<embed src="/pdf/401_4.pdf" width="900" height="690" type='application/pdf'>
+				div.center
+					.fter.text-center
+						small
+							a.btn.btn.btn-primary(target="_blank" href="/pdf/401.pdf" role="button") Editer PDF
+							a.btn.btn.btn-primary(target="_blank" href="/401" role="button") BS Online
 
 
 
