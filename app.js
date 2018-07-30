@@ -15,6 +15,7 @@ var infos = require('./routes/infos');
 var payment_succes = require('./routes/payment_succes');
 var payment_cancelled = require('./routes/payment_cancelled');
 var tuto = require('./routes/tuto');
+var plan = require('./routes/plan');
 
 
 var app = express();
@@ -45,6 +46,7 @@ app.use('/infos', infos);
 app.use('/payment_succes', payment_succes);
 app.use('/payment_cancelled', payment_cancelled);
 app.use('/tuto', tuto);
+app.use('/plan', plan);
 
 app.get('/101', function (req, res) {res.render("101")})
 app.get('/102', function (req, res) {res.render("102")})

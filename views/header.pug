@@ -64,6 +64,7 @@ mixin header
         +nav_item("Contact") Contact
         +nav_item("Infos") Informations
         +nav_item("Tuto") Tuto
+        +nav_item("Plan") Plans de Jeux
 
       else if active  =='about'
         +nav_item("/") Accueil
@@ -71,6 +72,7 @@ mixin header
         +nav_item("Contact") Contact
         +nav_item("Infos") Informations
         +nav_item("Tuto") Tuto
+        +nav_item("Plan") Plans de Jeux
 
       else if active=='contact'
         +nav_item("/") Accueil
@@ -78,6 +80,7 @@ mixin header
         +nav_item("Contact","active") Contact
         +nav_item("Infos") Informations
         +nav_item("Tuto") Tuto
+        +nav_item("Plan") Plans de Jeux
 
       else if active  =='infos'
         +nav_item("/") Accueil
@@ -85,13 +88,23 @@ mixin header
         +nav_item("Contact") Contact
         +nav_item("Infos","active") Informations
         +nav_item("Tuto") Tuto
-          
+        +nav_item("Plan") Plans de Jeux
+
       else if active  =='tuto'
         +nav_item("/") Home
         +nav_item("About") About
         +nav_item("Contact") Contact
         +nav_item("Infos") Informations
         +nav_item("Tuto","active") Tuto
+        +nav_item("Plan") Plans de Jeux
+
+      else if active  =='plan'
+        +nav_item("/") Home
+        +nav_item("About") About
+        +nav_item("Contact") Contact
+        +nav_item("Infos") Informations
+        +nav_item("Tuto") Tuto
+        +nav_item("Plan","active") Plans de Jeux
 
     else if lang=='2'
       if active=='home'
@@ -100,6 +113,7 @@ mixin header
         +nav_item("Contact") Contact
         +nav_item("Infos") Informations
         +nav_item("Tuto") Tuto
+        +nav_item("Plan") Plans de Jeux
 
       else if active  =='about'
         +nav_item("/") Home
@@ -107,6 +121,7 @@ mixin header
         +nav_item("Contact") Contact
         +nav_item("Infos") Informations
         +nav_item("Tuto") Tuto
+        +nav_item("Plan") Plans de Jeux
 
       else if active=='contact'
         +nav_item("/") Home
@@ -114,6 +129,7 @@ mixin header
         +nav_item("Contact","active") Contact
         +nav_item("Infos") Informations
         +nav_item("Tuto") Tuto
+        +nav_item("Plan") Plans de Jeux
 
       else if active  =='infos'
         +nav_item("/") Home
@@ -121,6 +137,7 @@ mixin header
         +nav_item("Contact") Contact
         +nav_item("Infos","active") Informations
         +nav_item("Tuto") Tuto
+        +nav_item("Plan") Plans de Jeux
 
       else if active  =='tuto'
         +nav_item("/") Home
@@ -128,3 +145,12 @@ mixin header
         +nav_item("Contact") Contact
         +nav_item("Infos") Informations
         +nav_item("Tuto","active") Tuto
+        +nav_item("Plan") Plans de Jeux
+
+      else if active  =='plan'
+        +nav_item("/") Home
+        +nav_item("About") About
+        +nav_item("Contact") Contact
+        +nav_item("Infos") Informations
+        +nav_item("Tuto") Tuto
+        +nav_item("Plan","active") Plans de Jeux

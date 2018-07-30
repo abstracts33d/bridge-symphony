@@ -33,3 +33,19 @@ div.content {margin-left: 20px;}
 .margin{
 	margin-left:  30px;
 }
+
+.center{
+  text-align: center;
+}
+
+.padding-top{
+  padding-top: 2em;
+}
+.padding-top-max{
+  padding-top: 4em;
+}
+.plan{
+  font-size: 2em;
+  text-align: justify;
+  text-justify: inter-word;
+}

@@ -1,0 +1,56 @@
+extends layout.pug
+
+block append head
+  title= "Bridge Symphony - Tuto"
+  meta(name="description" content="Bridge Symphony - plan de jeu")
+
+block content
+  div(id="container" class="backgroundcontainer")
+    div(id="output" class="backgroundcontainer")
+  div(id="controls" style="display: none;" class="controls")
+
+  .container
+    .row
+      .col-md-12
+        h1.center Exemple 1
+    .row
+      .col-md-4
+        div.center.padding-top
+          <img src="images/R2b.png" width="300px">
+      .col-md-4
+        .plan.padding-top-max
+          p.center Vous jouez :
+          p.center 4 <img src="images/couleurs/coeur.png" width="30px"> en R2
+          p.center (partenaire R3 au mort)
+          p.center a) Entame Damme de Pique
+          p.center b) Entame Deux de Carreau
+          br
+          p.center Faites vos plans de jeux
+      .col-md-4
+        div.center.padding-top
+          <img src="images/R3b.png" width="300px">
+    br
+    br
+    br
+    .row
+      .col-md-12
+        h1.center Exemple 2
+    .row
+      .col-md-4
+        div.center.padding-top
+          <img src="images/S1b.png" width="300px">
+      .col-md-4
+        .plan.padding-top-max
+          p.center Vous jouez :
+          p.center 7 <img src="images/couleurs/pic.png" width="30px"> en S1
+          p.center (partenaire B1 au mort)
+          p.center Entame Atout
+          br
+          p.center Faites toutes les levées
+      .col-md-4
+        div.center.padding-top
+          <img src="images/B1b.png" width="300px">
+
+
+block append scripts
+  script(src='js/triangles-tuto-min.js')
