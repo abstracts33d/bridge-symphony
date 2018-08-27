@@ -49,3 +49,8 @@ div.content {margin-left: 20px;}
   text-align: justify;
   text-justify: inter-word;
 }
+
+.slack{
+  display: flex;
+  padding-top: 18px;
+}
