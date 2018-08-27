@@ -53,4 +53,5 @@ div.content {margin-left: 20px;}
 .slack{
   display: flex;
   padding-top: 17px;
+  padding-left: 10px;
 }
